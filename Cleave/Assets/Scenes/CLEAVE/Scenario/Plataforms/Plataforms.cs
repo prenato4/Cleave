@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class Plataforms : MonoBehaviour
+public class MovingPlatformController : MonoBehaviour
 {
     public float moveSpeed;
     public bool useTransform;
@@ -92,9 +92,12 @@ public class Plataforms : MonoBehaviour
             other.transform.SetParent(null);
         }
     }
+    
 
     private void OnDrawGizmos()
     {
+        
+        
         if (useTransform)
         {
             Debug.DrawLine(transform.position, transform.position + moveDestination.localPosition, Color.yellow);
