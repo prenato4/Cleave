@@ -102,10 +102,10 @@ public class MovingPlatformController : MonoBehaviour
         {
             Debug.DrawLine(transform.position, transform.position + moveDestination.localPosition, Color.yellow);
         }
-        else
+        /*else
         {
             Debug.DrawLine(transform.position, transform.position + (Vector3)movePosition, Color.red);
-        }
+        }*/
         
     }
 }

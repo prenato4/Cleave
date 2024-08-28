@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        
         // Movimento horizontal
         float moveInput = Input.GetAxis("Horizontal"); // Obtém a entrada horizontal (teclas de seta)
     
@@ -70,21 +71,21 @@ public class Player : MonoBehaviour
         if (isShiftPressed && Time.time - lastDashTime > dashCooldown) // Verifica se a tecla Shift está pressionada e se o cooldown foi atingido
         {
             float dashInputHorizontal = Input.GetAxis("Horizontal");
-            float dashInputVertical = Input.GetAxis("Vertical");
+            //float dashInputVertical = Input.GetAxis("Vertical");
 
-            if (dashInputHorizontal != 0 || dashInputVertical != 0)
+            if (dashInputHorizontal != 0)
             {
-                StartCoroutine(Dash(dashInputHorizontal, dashInputVertical));
+                StartCoroutine(Dash(dashInputHorizontal));
                 lastDashTime = Time.time; // Atualiza o momento do último dash
             }
         }
     }
 
-    IEnumerator Dash(float horizontalInput, float verticalInput)
+    IEnumerator Dash(float horizontalInput)
     {
         isDashing = true; // Define que o jogador está realizando um dash
 
-        Vector2 dashDirection = new Vector2(horizontalInput, verticalInput).normalized; // Obtém a direção do dash normalizada
+        Vector2 dashDirection = new Vector2(horizontalInput, 0).normalized; // Obtém a direção do dash normalizada
         rb.velocity = dashDirection * dashForce; // Aplica a força do dash na direção especificada
     
         yield return new WaitForSeconds(0.5f); // Tempo de duração do dash
