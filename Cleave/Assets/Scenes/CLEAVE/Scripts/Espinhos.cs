@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spike : MonoBehaviour
 {
-    public int damageAmount = 10; // Quantidade de dano causada pelo espinho
+    public int damage = 10; // Quantidade de dano causada pelo espinho
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,7 +14,7 @@ public class Spike : MonoBehaviour
 
             if (player != null)
             {
-                player.Damage(damageAmount); // Chama a função TakeDamage do jogador passando a quantidade de dano
+                player.Damage(damage); // Chama a função TakeDamage do jogador passando a quantidade de dano
             }
         }
     }
