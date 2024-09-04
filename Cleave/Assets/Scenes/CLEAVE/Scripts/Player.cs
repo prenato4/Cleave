@@ -20,6 +20,9 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb; // Referência ao Rigidbody do jogador
     private int jumpsRemaining; // Número de pulos restantes
+    
+    
+    public int health = 100; // Vida do jogador
 
     void Start()
     {
@@ -29,6 +32,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        
+        
+        if (health <= 0)
+        {
+            Die(); // Chama a função Die se a vida for menor ou igual a zero
+        }
         
         // Movimento horizontal
         float moveInput = Input.GetAxis("Horizontal"); // Obtém a entrada horizontal (teclas de seta)
@@ -71,7 +80,7 @@ public class Player : MonoBehaviour
         if (isShiftPressed && Time.time - lastDashTime > dashCooldown) // Verifica se a tecla Shift está pressionada e se o cooldown foi atingido
         {
             float dashInputHorizontal = Input.GetAxis("Horizontal");
-            //float dashInputVertical = Input.GetAxis("Vertical");
+           
 
             if (dashInputHorizontal != 0)
             {
@@ -79,6 +88,16 @@ public class Player : MonoBehaviour
                 lastDashTime = Time.time; // Atualiza o momento do último dash
             }
         }
+    }
+
+    public void Damage(int DM)
+    {
+        health -= DM;
+    }
+
+    void Die()
+    {
+        Debug.Log("Player morreu!");
     }
 
     IEnumerator Dash(float horizontalInput)

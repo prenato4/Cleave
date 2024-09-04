@@ -26,14 +26,19 @@ public class MovingPlatformController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Initial Position: " + _initialPosition);
+        Debug.Log("Move Target: " + _moveTarget);
+        
         if (shouldFlip) _originalLocalScaleX = transform.localScale.x;
         
         if (useTransform)
         {
+            
             _moveTarget = moveDestination.localPosition;
         }
         else
         {
+             _moveTarget = movePosition;
             _moveTarget = movePosition;
         }
         _initialPosition = transform.position;
@@ -97,15 +102,14 @@ public class MovingPlatformController : MonoBehaviour
     private void OnDrawGizmos()
     {
         
-        
         if (useTransform)
         {
             Debug.DrawLine(transform.position, transform.position + moveDestination.localPosition, Color.yellow);
         }
-        /*else
+        else
         {
             Debug.DrawLine(transform.position, transform.position + (Vector3)movePosition, Color.red);
-        }*/
+        }
         
     }
 }
