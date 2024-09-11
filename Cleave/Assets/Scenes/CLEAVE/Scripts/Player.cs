@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,11 +24,16 @@ public class Player : MonoBehaviour
     
     
     public int health = 100; // Vida do jogador
+    public int maxhealth;
+    private int currentLife;
+    public event Action<int> OnLifeChanged;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Obtém o Rigidbody2D do jogador no início
         jumpsRemaining = maxJumps; // Inicializa o número de pulos restantes
+        currentLife = maxhealth;
+        NotifyLifeChanged();
     }
 
     void Update()
@@ -93,6 +99,22 @@ public class Player : MonoBehaviour
     public void Damage(int DM)
     {
         health -= DM;
+        if (health < 0) health = 0; // Garantir que a saúde não seja negativa
+        currentLife = health; // Atualiza currentLife para refletir a nova saúde
+        NotifyLifeChanged();
+    }
+    
+    public void Heal(int amount)
+    {
+        health += amount;
+        if (health > maxhealth) health = maxhealth; // Garantir que a saúde não ultrapasse o máximo
+        currentLife = health; // Atualiza currentLife para refletir a nova saúde
+        NotifyLifeChanged();
+    }
+    
+    private void NotifyLifeChanged()
+    {
+        OnLifeChanged?.Invoke(currentLife);
     }
 
     void Die()
