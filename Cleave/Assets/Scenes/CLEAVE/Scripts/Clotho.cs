@@ -4,7 +4,7 @@ using UnityEngine;
 public class Clotho : MonoBehaviour
 {
     public int maxHealth = 100;  // Vida máxima do boss
-    private int currentHealth;
+    public int currentHealth;
 
     public float gravityChangeInterval = 20f; // Intervalo de mudança de gravidade
     public float gravityMultiplier = 0.5f; // Fator de multiplicação da gravidade

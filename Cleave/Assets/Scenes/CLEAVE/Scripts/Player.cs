@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     private bool facingRight = true; // Define se o jogador está virado para a direita
     private float lastDashTime; // Momento do último dash
     
+    private bool controlsEnabled = true;
+    
     public static int health = 100; // Vida do jogador, valor padrão
 
     public event Action<int> OnLifeChanged; // Evento para notificar mudanças na vida do jogador
@@ -50,6 +52,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        
+        if (!controlsEnabled)
+            return;
         // Atualiza o estado do jogador a cada frame
         HandleInput(); // Lida com a entrada do jogador
         Move(); // Move o jogador
@@ -103,20 +108,24 @@ public class Player : MonoBehaviour
         // Movimenta o jogador horizontalmente com base na entrada
         float moveInput = Input.GetAxis("Horizontal"); // Obtém a entrada horizontal (teclas de seta ou A/D)
 
-        if (!attckon && !Jumping)
+        if (!attckon)
         {
             
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y); // Aplica a velocidade horizontal ao Rigidbody
-        
-        // Verifica se o jogador está se movendo e ajusta a animação
-        if (moveInput != 0 )
-        {
-            anim.SetInteger("Transition", 2); // Animação de correr
-        }
-        else
-        {
-            anim.SetInteger("Transition", 1); // Animação de idle
-        }
+    
+            // Verifica se o jogador está se movendo e ajusta a animação apenas se não estiver pulando
+            if (Jumping)
+            {
+                anim.SetInteger("Transition", 3); // Manter a animação de pulo enquanto estiver no ar
+            }
+            else if (moveInput != 0)
+            {
+                anim.SetInteger("Transition", 2); // Animação de correr
+            }
+            else
+            {
+                anim.SetInteger("Transition", 1); // Animação de idle
+            }
         
         }
        
@@ -206,9 +215,23 @@ public class Player : MonoBehaviour
     {
         // Aplica dano ao jogador e atualiza a vida
         health -= DM;
+        anim.SetTrigger("Hit");
         if (health < 0) health = 0; // Garantir que a saúde não seja negativa
         currentLife = health; // Atualiza currentLife para refletir a nova saúde
         NotifyLifeChanged(); // Notifica sobre a mudança na vida
+    }
+    
+    public void DisableControls()
+    {
+        controlsEnabled = false;
+        rb.velocity = Vector2.zero; // Para o movimento imediatamente
+       
+    }
+
+    public void EnableControls()
+    {
+        controlsEnabled = true;
+       
     }
 
     public void Heal(int amount)
