@@ -158,6 +158,8 @@ public class Player : MonoBehaviour
         {
             anim.SetInteger("Transition", 3); // Animação de pulo
             Jumping = true;
+            AudioObserver.OnPlaySfxEvent("Jump");
+            ParticleObserver.onParticleSpawn(transform.position);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce); // Aplica a força de pulo ao Rigidbody
             jumpsRemaining--; // Decrementa o número de pulos restantes
 
