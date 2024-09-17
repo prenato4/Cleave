@@ -3,136 +3,196 @@ using UnityEngine;
 
 public class Clotho : MonoBehaviour
 {
-    public int maxHealth = 100;  // Vida máxima do boss
-    public int currentHealth;
+    public int vidaMaxima = 100; // Vida máxima do boss
+    public int vidaAtual; // Vida atual do boss
+    public bool escudoAtivo = false; // Estado do escudo
 
-    public float gravityChangeInterval = 20f; // Intervalo de mudança de gravidade
-    public float gravityMultiplier = 0.5f; // Fator de multiplicação da gravidade
-    private bool gravityChanged = false; // Flag para verificar se a gravidade foi alterada
+    public float tempoEscudo = 5f; // Tempo que o escudo fica ativo
+    public float intervaloEscudo = 10f; // Intervalo de tempo entre ativação do escudo
 
-    public GameObject objectToActivate; // Objeto que será ativado
-    public float activationInterval = 30f; // Intervalo de ativação do objeto
+    private float tempoRestanteEscudo;
+    private Animator an;
 
-    public GameObject projectilePrefab; // Prefab do projétil
-    public Transform projectileSpawnPoint; // Ponto de spawn do projétil
-    public float shootingInterval = 5f; // Intervalo de tiros
+    public GameObject prefabAtaque; // Prefab do projétil a ser disparado
+    public Transform pontoDisparo; // Ponto de onde o projétil será disparado
+    public float intervaloDisparo = 3f; // Intervalo entre disparos
 
-    private Transform playerTransform; // Transform do player
+    private float tempoRestanteDisparo;
+
+    public Transform Player; // Referência ao Transform do player
+    public float gravidadeAlterada = 2f; // Gravidade alterada pelo boss
+    public float velocidadeAlterada = 2f; // Velocidade alterada pelo boss
+    public float tempoAlteracao = 5f; // Tempo de duração das alterações
+    private float tempoRestanteAlteracao;
+    private bool atacando = false;
 
     void Start()
     {
-        currentHealth = maxHealth;
-        StartCoroutine(ChangeGravityPeriodically());
-        StartCoroutine(ActivateObjectPeriodically());
-        StartCoroutine(ShootAtPlayerPeriodically());
+        an = GetComponent<Animator>();
+        vidaAtual = vidaMaxima;
+        tempoRestanteEscudo = intervaloEscudo;
+        tempoRestanteDisparo = intervaloDisparo;
 
-        // Encontrar o transform do player
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        StartCoroutine(AlterarGravidadeEVelocidadePeriodicamente());
+        StartCoroutine(VerificarAtaques()); // Iniciar a rotina de ataque
+
+        // Encontra o player na cena
+        Player = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
-    private void Update()
+    void Update()
     {
-        // Aqui você pode adicionar outras atualizações do Clotho
-    }
+        // Atualiza o tempo restante do escudo
+        tempoRestanteEscudo -= Time.deltaTime;
 
-    public void Damage(int damage)
-    {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        // Ativa o escudo se o tempo restante for menor ou igual a 0
+        if (tempoRestanteEscudo <= 0)
         {
-            Die();
+            AtivarEscudo();
+            tempoRestanteEscudo = intervaloEscudo; // Reinicia o tempo do escudo
         }
-    }
 
-    private void Die()
-    {
-        // Aqui você pode adicionar animações de morte, efeitos sonoros, etc.
-        Destroy(gameObject); // Destroi o objeto do boss
-    }
+        // Atualiza o tempo restante para o próximo disparo
+        tempoRestanteDisparo -= Time.deltaTime;
 
-    private IEnumerator ChangeGravityPeriodically()
-    {
-        while (true)
+        // Dispara o projétil se o tempo restante for menor ou igual a 0
+        if (tempoRestanteDisparo <= 0 && prefabAtaque != null)
         {
-            // Manipula a gravidade ao redor do boss
-            ManipulateGravity();
-            
-            // Espera pelo próximo intervalo
-            yield return new WaitForSeconds(gravityChangeInterval);
+            DispararProjétil();
+            tempoRestanteDisparo = intervaloDisparo; // Reinicia o tempo de disparo
         }
-    }
 
-    private void ManipulateGravity()
-    {
-        // Verifica se a gravidade não foi alterada recentemente
-        if (!gravityChanged)
+        // Atualiza o tempo restante para a alteração
+        if (tempoRestanteAlteracao > 0)
         {
-            // Alterar a gravidade global do Unity
-            Physics2D.gravity *= gravityMultiplier;
-            gravityChanged = true;
-            
-            // Definir um temporizador para reverter a alteração da gravidade
-            StartCoroutine(RevertGravityAfterDelay());
-        }
-    }
-
-    private IEnumerator RevertGravityAfterDelay()
-    {
-        // Espera um tempo antes de reverter a gravidade
-        yield return new WaitForSeconds(gravityChangeInterval);
-        
-        // Reverter a gravidade global ao seu valor original
-        Physics2D.gravity /= gravityMultiplier;
-        gravityChanged = false;
-    }
-
-    private IEnumerator ActivateObjectPeriodically()
-    {
-        while (true)
-        {
-            // Ativa o objeto
-            if (objectToActivate != null)
+            tempoRestanteAlteracao -= Time.deltaTime;
+            if (tempoRestanteAlteracao <= 0)
             {
-                objectToActivate.SetActive(true);
-                // Opcional: Desativar o objeto após um curto período
-                yield return new WaitForSeconds(5f); // Ajuste o tempo conforme necessário
-                objectToActivate.SetActive(false);
-            }
-            
-            // Espera pelo próximo intervalo
-            yield return new WaitForSeconds(activationInterval);
-        }
-    }
-
-    private IEnumerator ShootAtPlayerPeriodically()
-    {
-        while (true)
-        {
-            // Atira no player
-            ShootAtPlayer();
-            
-            // Espera pelo próximo intervalo
-            yield return new WaitForSeconds(shootingInterval);
-        }
-    }
-
-    private void ShootAtPlayer()
-    {
-        if (projectilePrefab != null && playerTransform != null && projectileSpawnPoint != null)
-        {
-            // Instanciar o projétil no ponto de spawn
-            GameObject projectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
-
-            // Calcular a direção para o player
-            Vector2 direction = (playerTransform.position - projectileSpawnPoint.position).normalized;
-
-            // Inicializa o projétil com a direção calculada
-            Feixe feixeScript = projectile.GetComponent<Feixe>();
-            if (feixeScript != null)
-            {
-                feixeScript.Initialize(direction);
+                RestaurarPlayer();
             }
         }
+
+        // Atualiza a vida e verifica se o boss morreu
+        if (vidaAtual <= 0)
+        {
+            Morrer();
+        }
+
+        // Atualiza a rotação para o player constantemente
+        FlipTowardsPlayer();
     }
 
+    public void Damage(int dano)
+    {
+        if (!escudoAtivo) // Só recebe dano se o escudo não estiver ativo
+        {
+            vidaAtual -= dano;
+            if (vidaAtual < 0) vidaAtual = 0; // Garante que a vida não seja negativa
+        }
+    }
+
+    void AtivarEscudo()
+    {
+        escudoAtivo = true;
+        an.SetInteger("Transition", 3); // Transição para o estado do escudo ativo
+        // Ativa o escudo (pode adicionar efeitos visuais ou sonoros aqui)
+        Invoke("DesativarEscudo", tempoEscudo); // Desativa o escudo após o tempo especificado
+    }
+
+    void DesativarEscudo()
+    {
+        escudoAtivo = false;
+        an.SetInteger("Transition", 1); // Transição para o estado idle
+        // Desativa o escudo (pode adicionar efeitos visuais ou sonoros aqui)
+    }
+
+    void DispararProjétil()
+    {
+        if (pontoDisparo != null && prefabAtaque != null)
+        {
+            atacando = true;
+            an.SetInteger("Transition", 5); // Transição para o estado de ataque
+            Instantiate(prefabAtaque, pontoDisparo.position, pontoDisparo.rotation);
+        }
+    }
+
+    IEnumerator AlterarGravidadeEVelocidadePeriodicamente()
+    {
+        while (true)
+        {
+            if (Player != null)
+            {
+                // Altera a gravidade e a velocidade
+                Player.GetComponent<Player>().SetGravity(gravidadeAlterada);
+                Player.GetComponent<Player>().speed = velocidadeAlterada;
+
+                // Define o tempo restante para a alteração
+                tempoRestanteAlteracao = tempoAlteracao;
+
+                an.SetInteger("Transition", 4); // Transição para o estado de alteração
+
+                // Espera o tempo de alteração antes de restaurar
+                yield return new WaitForSeconds(tempoAlteracao);
+
+                // Restaura a gravidade e a velocidade do player
+                RestaurarPlayer();
+
+                an.SetInteger("Transition", 1); // Transição para o estado idle
+            }
+
+            // Espera 10 segundos antes da próxima alteração
+            yield return new WaitForSeconds(10f);
+        }
+    }
+
+    void RestaurarPlayer()
+    {
+        if (Player != null)
+        {
+            an.SetInteger("Transition", 1); // Transição para o estado idle
+            Player.GetComponent<Player>().SetGravity(1f); // Restaura a gravidade padrão
+            Player.GetComponent<Player>().speed = 5f; // Restaura a velocidade padrão
+        }
+    }
+
+    void Morrer()
+    {
+        // Lógica para quando o boss morrer (ex. animação de morte, drop de itens, etc.)
+        an.SetInteger("Transition", 6); // Transição para a animação de morte
+        Destroy(gameObject, 1f); // Remove o boss do jogo após um pequeno atraso para a animação
+    }
+
+    IEnumerator VerificarAtaques()
+    {
+        while (true)
+        {
+            if (atacando)
+            {
+                // Retorna à animação padrão após o ataque
+                yield return new WaitForSeconds(0.5f); // Aguarda um pouco antes de retornar ao idle
+                an.SetInteger("Transition", 1); // Retorna ao estado idle
+                atacando = false;
+            }
+
+            yield return null;
+        }
+    }
+
+    void FlipTowardsPlayer()
+    {
+        if (Player != null)
+        {
+            // Verifica a posição do player para decidir a direção de ataque
+            if (Player.position.x > transform.position.x)
+            {
+                // Player está à direita
+                transform.localScale = new Vector3(1, 1, 1); // Olhando para a direita
+            }
+            else
+            {
+                // Player está à esquerda
+                transform.localScale = new Vector3(-1, 1, 1); // Olhando para a esquerda
+            }
+        }
+    }
 }

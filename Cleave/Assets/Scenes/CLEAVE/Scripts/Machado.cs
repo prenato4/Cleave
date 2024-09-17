@@ -27,6 +27,18 @@ public class Machado : MonoBehaviour
             {
                 ene.Damage(attackDamage); // Aplica o dano ao inimigo
             }
+            
+            Hunt hunt = other.GetComponent<Hunt>();
+            if (hunt != null)
+            {
+                hunt.Damage(attackDamage); // Aplica o dano ao inimigo
+            }
+            
+            Erali Fada = other.GetComponent<Erali>();
+            if (Fada != null)
+            {
+                Fada.Damage(attackDamage); // Aplica o dano ao inimigo
+            }
         }
     }
 }

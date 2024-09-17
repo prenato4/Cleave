@@ -12,6 +12,9 @@ public class Hunt : MonoBehaviour
     public float animationResetDelay = 1f; // Tempo após o disparo para voltar à animação padrão
     public float trapMinDistance = 2f; // Distância mínima onde a armadilha pode ser colocada
     public float trapMaxDistance = 5f; // Distância máxima onde a armadilha pode ser colocada
+    
+    public int maxHealth = 100;  // Vida máxima do boss
+    public int currentHealth;   // Vida atual do boss
 
 
     private bool facingRight = true; // Define se o boss está virado para a direita
@@ -22,6 +25,9 @@ public class Hunt : MonoBehaviour
 
     void Start()
     {
+        
+        currentHealth = maxHealth;
+        
         anim = GetComponent<Animator>();
         // Encontrar o player na cena
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -79,6 +85,23 @@ public class Hunt : MonoBehaviour
             SpawnTrap();
         }
     }
+    
+     public void Damage(int damage)
+        {
+            currentHealth -= damage;  // Reduz a vida
+    
+            // Verifica se o boss ainda tem vida
+            if (currentHealth > 0)
+            {
+                // Se quiser adicionar uma animação de hit, faça isso aqui
+                Debug.Log("Boss recebeu dano! Vida atual: " + currentHealth);
+            }
+            else
+            {
+                // Se a vida chegar a zero, chama o método para morte
+                Die();
+            }
+        }
 
     void ShootAtPlayer()
     {
@@ -128,4 +151,12 @@ public class Hunt : MonoBehaviour
         // Retorna para a animação padrão (idle, por exemplo)
         anim.SetInteger("Transition", 1);  // Aqui, 1 seria a animação padrão de idle
     }
+    
+     void Die()
+        {
+          
+    
+            // Desativa ou destrói o boss após a morte
+             Destroy(gameObject); // Se quiser destruir o objeto
+        }
 }

@@ -18,11 +18,13 @@ public class Player : MonoBehaviour
     public Transform firePoint; // Ponto de disparo (posicione no jogador no Unity)
     public int maxhealth;
 
+    
+    public float gravityScale = 1f; // Gravidade personalizada do player
     private bool Jumping;
     
     private bool attckon;
-    
-    private Rigidbody2D rb; // Referência ao Rigidbody do jogador
+
+    public Rigidbody2D rb; // Referência ao Rigidbody do jogador
     private Animator anim; // Referência ao Animator para controle de animações
     private int jumpsRemaining; // Número de pulos restantes
     private int currentLife; // Vida atual do jogador
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour
         // Inicializa referências e configurações iniciais
         anim = GetComponent<Animator>(); // Obtém o componente Animator
         rb = GetComponent<Rigidbody2D>(); // Obtém o componente Rigidbody2D
+        rb.gravityScale = gravityScale;
         jumpsRemaining = maxJumps; // Inicializa o número de pulos restantes
         currentLife = maxhealth; // Inicializa a vida atual
         NotifyLifeChanged(); // Notifica sobre a mudança na vida
@@ -140,6 +143,12 @@ public class Player : MonoBehaviour
         {
             Flip(); // Vira o jogador para a esquerda
         }
+    }
+    
+    // Método para alterar a gravidade do player
+    public void SetGravity(float newGravityScale)
+    {
+        rb.gravityScale = newGravityScale;
     }
 
     void Jump()
