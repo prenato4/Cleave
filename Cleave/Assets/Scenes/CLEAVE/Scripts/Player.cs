@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
             Shoot(); // Chama o método de disparo
         }
         
-        // Agachar
+        /*// Agachar
         if (Input.GetKey(KeyCode.DownArrow)) // Verifica se a tecla de seta para baixo está sendo pressionada
         {
             GetComponent<BoxCollider2D>().size = new Vector2(GetComponent<BoxCollider2D>().size.x, 0.5f); // Reduz a altura do collider para simular o agachamento
@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
         else
         {
             GetComponent<BoxCollider2D>().size = new Vector2(GetComponent<BoxCollider2D>().size.x, 0.4830437f); // Retorna a altura do collider ao normal
-        }
+        }*/
         
         // Verificar se a tecla Shift está sendo pressionada
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -135,11 +135,11 @@ public class Player : MonoBehaviour
         
 
         // Verifica a direção do movimento e faz o jogador virar se necessário
-        if (moveInput > 0 && !facingRight)
+        if (moveInput > 0 && facingRight)
         {
             Flip(); // Vira o jogador para a direita
         }
-        else if (moveInput < 0 && facingRight)
+        else if (moveInput < 0 && !facingRight)
         {
             Flip(); // Vira o jogador para a esquerda
         }
