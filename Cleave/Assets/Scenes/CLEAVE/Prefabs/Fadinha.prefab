@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1969429263, guid: 6aa8de2b0c3a04e448edf00c8de0e45d, type: 3}
+  m_Sprite: {fileID: 877785832, guid: d6eed41b59e345c468933a7061e0380b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   moveDestination: {fileID: 2348041914758212709}
   playerAttacked: 0
   attackRange: 2
-  chaseRange: 5
+  chaseRange: 20
   fairyHealth: 50
   fairyDamage: 1
   attackCooldown: 2
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.92, y: 1.28}
+    oldSize: {x: 0.65, y: 0.625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

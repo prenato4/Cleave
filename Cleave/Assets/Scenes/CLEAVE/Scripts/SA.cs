@@ -35,7 +35,7 @@ public class SA : MonoBehaviour
 
             if (coelho != null)
             {
-                coelho.ReceberDano(dano); // Chama a função ReceberDano do coelho passando a quantidade de dano
+                coelho.Damage(dano); // Chama a função ReceberDano do coelho passando a quantidade de dano
             }
         }
 

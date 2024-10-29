@@ -1,0 +1,790 @@
+fileFormatVersion: 2
+guid: 86a1b15ee89e7fb488364dfa111d00c7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 413
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c5b8ea12b7f75469e3f22011035359
+      internalID: 406051643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 414
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d042cefca495f488a31467e664fff9
+      internalID: 1784721175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 414
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500105cc797b0084daa5b745210ac113
+      internalID: 1175292869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 415
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cd8f088d92bdf4b9fdc9bf0776a17a
+      internalID: 1630574648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 414
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fbb918d2da4d64aaa833372a3d787f
+      internalID: -1434102866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 414
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b9459d5eb5534499688085124a6e27
+      internalID: -121265579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 321
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053de40bf9d3f874fa6db76cfc43049b
+      internalID: 1801329843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 321
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec589f4f0fb66749bfe09391214a393
+      internalID: -438892901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 321
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ce1db47a3867447b4e799cda07002b
+      internalID: 592603936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 321
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c9cc48829a11140bec521f04fbbb59
+      internalID: 106409660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 321
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3535399a5303834d9f557f50c03bf17
+      internalID: 648035921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 321
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a05590961363f4caac77cbba70e8bc
+      internalID: -166839489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_13
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 228
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9f0e359991775488c47e0e5c589df5
+      internalID: -817378529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 228
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f16f766b35ff5a46ac3d6868b9549e6
+      internalID: -403241661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 228
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70e285afe92bc84fa277829dfca3f87
+      internalID: -869292317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 228
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8c799fce858a243a65741b491e1ce7
+      internalID: -1427806896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 229
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eba065be3c272a408bb83450c9106fb
+      internalID: -1015809714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_19
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 228
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4267a6dc6a80f9f4c8555ab50af7c752
+      internalID: 1148167982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 136
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08697746ab3a56848b37d32a37c8a671
+      internalID: -421051983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 135
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66270ec0022652b428fe6a53bf1a1a0b
+      internalID: 2078984543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_23
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 135
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d687840375d88c44c96c179b7857a6ab
+      internalID: 2125778709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_24
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 135
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8654e1348b855c74d8b47b6ea7defea3
+      internalID: -44055709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 135
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af61e94f06b76454bab131e491ddfbfa
+      internalID: 665387156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_26
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 135
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7846a269536256d48a86fbf5d8c3fea7
+      internalID: 2006661547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_27
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 42
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b67da1ef044dc440b9ca823353951f3
+      internalID: 801955136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_28
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 42
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca34edbc07c68c469342724ae8e11f0
+      internalID: -66108496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 42
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04728cf297ed0c24db6f6ed49a92d230
+      internalID: 640945489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_30
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 42
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7d326117aab7144b6623a8851fa3d2
+      internalID: 1159448032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_31
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 42
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0fff96fe89c9a4d81f6c7d8cbbba4c
+      internalID: -1579057045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_attack_32
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 42
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3be7c481ea14b408b58b6f04be1334
+      internalID: -500666695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bun_AllAnims_Preview_attack_0: 406051643
+      Bun_AllAnims_Preview_attack_1: 1784721175
+      Bun_AllAnims_Preview_attack_10: 106409660
+      Bun_AllAnims_Preview_attack_11: 648035921
+      Bun_AllAnims_Preview_attack_12: -166839489
+      Bun_AllAnims_Preview_attack_13: -817378529
+      Bun_AllAnims_Preview_attack_14: -403241661
+      Bun_AllAnims_Preview_attack_15: -869292317
+      Bun_AllAnims_Preview_attack_16: -1427806896
+      Bun_AllAnims_Preview_attack_17: -1015809714
+      Bun_AllAnims_Preview_attack_18: -980621406
+      Bun_AllAnims_Preview_attack_19: 1148167982
+      Bun_AllAnims_Preview_attack_2: 1175292869
+      Bun_AllAnims_Preview_attack_20: -421051983
+      Bun_AllAnims_Preview_attack_21: 242451279
+      Bun_AllAnims_Preview_attack_22: 2078984543
+      Bun_AllAnims_Preview_attack_23: 2125778709
+      Bun_AllAnims_Preview_attack_24: -44055709
+      Bun_AllAnims_Preview_attack_25: 665387156
+      Bun_AllAnims_Preview_attack_26: 2006661547
+      Bun_AllAnims_Preview_attack_27: 801955136
+      Bun_AllAnims_Preview_attack_28: -66108496
+      Bun_AllAnims_Preview_attack_29: 640945489
+      Bun_AllAnims_Preview_attack_3: 1630574648
+      Bun_AllAnims_Preview_attack_30: 1159448032
+      Bun_AllAnims_Preview_attack_31: -1579057045
+      Bun_AllAnims_Preview_attack_32: -500666695
+      Bun_AllAnims_Preview_attack_4: 1297049253
+      Bun_AllAnims_Preview_attack_5: -1434102866
+      Bun_AllAnims_Preview_attack_6: -121265579
+      Bun_AllAnims_Preview_attack_7: 1801329843
+      Bun_AllAnims_Preview_attack_8: -438892901
+      Bun_AllAnims_Preview_attack_9: 592603936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

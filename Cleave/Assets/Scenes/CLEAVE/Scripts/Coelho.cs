@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Coelho : MonoBehaviour
@@ -8,106 +7,130 @@ public class Coelho : MonoBehaviour
     public int vida = 3;
     public int danoAtaque = 1;
     public float alcanceAtaque = 1f;
-    public float distanciaDeteccao = 5f; // Distância para o coelho começar a seguir o jogador
-    public float tempoInvulnerabilidade = 0.5f; // Reduzido para ataques mais rápidos
-    public float tempoCooldown = 0.5f; // Tempo de cooldown menor
-    public float forcaPuloMin = 5f; // Força mínima do pulo
-    public float forcaPuloMax = 10f; // Força máxima do pulo, tornando os saltos imprevisíveis
+    public float distanciaDeteccao = 5f; 
+    public float tempoInvulnerabilidade = 0.5f;
+    public float tempoCooldown = 0.5f;
+    public float forcaPuloMin = 5f;
+    public float forcaPuloMax = 10f;
+    public float delayAtaque = 0.2f;
+    public float duracaoAnimacaoAtaque = 0.3f; // Duração da animação de ataque
 
     private Transform jogador;
     private bool invulneravel = false;
     private bool atacando = false;
     private bool emCooldown = false;
-    private float contadorAtaque = 0f;
-    private float contadorCooldown = 0f;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
+    private Animator animator;
+    private float contadorCooldown = 0f;
 
     private void Start()
     {
         jogador = GameObject.FindGameObjectWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (emCooldown)
         {
-            // Se o coelho está em cooldown, ele não pode se mover
             contadorCooldown += Time.deltaTime;
             if (contadorCooldown >= tempoCooldown)
             {
                 emCooldown = false;
-                spriteRenderer.color = Color.white; // Volta à cor normal
+                invulneravel = false;
+                contadorCooldown = 0f;
+                spriteRenderer.color = Color.white;
             }
             return;
         }
 
-        if (!atacando)
+        float distanciaDoJogador = Vector2.Distance(transform.position, jogador.position);
+
+        if (distanciaDoJogador <= distanciaDeteccao && distanciaDoJogador > alcanceAtaque)
         {
             MoverParaJogador();
         }
+        else if (distanciaDoJogador <= alcanceAtaque)
+        {
+            Atacar();
+        }
         else
         {
-            contadorAtaque += Time.deltaTime;
-            if (contadorAtaque >= tempoInvulnerabilidade)
+            Idle();
+        }
+        
+        // Gira o coelho para olhar na direção do jogador
+        if (jogador != null)
+        {
+            if (jogador.position.x > transform.position.x)
             {
-                atacando = false;
-                invulneravel = false;
-                spriteRenderer.color = Color.white; // Volta à cor normal
-                contadorAtaque = 0f;
-                emCooldown = true;
-                spriteRenderer.color = Color.blue; // Indica cooldown (opcional)
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             }
         }
+    }
+
+    private void Idle()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isAttacking", false);
     }
 
     private void MoverParaJogador()
     {
-        if (jogador != null)
-        {
-            // Verifica se o jogador está dentro da área de detecção
-            float distanciaDoJogador = Vector2.Distance(transform.position, jogador.position);
-            if (distanciaDoJogador <= distanciaDeteccao)
-            {
-                Vector2 direcao = (jogador.position - transform.position).normalized;
-                //transform.position = Vector2.MoveTowards(transform.position, jogador.position, velocidade * Time.deltaTime);
+        Vector2 direcao = (jogador.position - transform.position).normalized;
+        transform.position = Vector2.MoveTowards(transform.position, jogador.position, velocidade * Time.deltaTime);
 
-                if (distanciaDoJogador <= alcanceAtaque)
-                {
-                    Atacar();
-                }
-            }
-        }
+        animator.SetBool("isWalking", true);
+        animator.SetBool("isAttacking", false);
     }
 
     private void Atacar()
     {
-        atacando = true;
-        invulneravel = true;
-        spriteRenderer.color = Color.red; // Muda a cor para indicar invulnerabilidade
+        if (!atacando)
+        {
+            atacando = true;
+            invulneravel = true;
+            emCooldown = true;
+            //spriteRenderer.color = Color.red;
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isAttacking", true);
 
-        // Calcula a direção para o jogador com variação aleatória
+            StartCoroutine(ExecutarAtaque());
+        }
+    }
+
+    private IEnumerator ExecutarAtaque()
+    {
+        yield return new WaitForSeconds(delayAtaque); // Pausa para a animação
+
         Vector2 direcaoAleatoria = new Vector2(
-            (jogador.position.x - transform.position.x) + Random.Range(-1f, 1f), // Aleatoriza a direção
+            (jogador.position.x - transform.position.x) + Random.Range(-1f, 1f),
             (jogador.position.y - transform.position.y) + Random.Range(-1f, 1f)
         ).normalized;
 
-        // Aplica uma força com variação aleatória para o pulo
         float forcaPulo = Random.Range(forcaPuloMin, forcaPuloMax);
-        rb.AddForce(direcaoAleatoria * forcaPulo, ForceMode2D.Impulse); // Simula o pulo em direção ao jogador
+        rb.AddForce(direcaoAleatoria * forcaPulo, ForceMode2D.Impulse);
 
-        // Causa dano ao jogador (você pode melhorar isso para detectar colisão durante o pulo)
         jogador.GetComponent<Player>().Damage(danoAtaque);
+
+        yield return new WaitForSeconds(duracaoAnimacaoAtaque); // Duração da animação de ataque
+        animator.SetBool("isAttacking", false); // Finaliza a animação de ataque
+        yield return new WaitForSeconds(tempoInvulnerabilidade);
+        atacando = false;
     }
 
-    public void ReceberDano(int dano)
+    public void Damage(int dano)
     {
         if (!invulneravel)
         {
             vida -= dano;
-
             if (vida <= 0)
             {
                 Morrer();

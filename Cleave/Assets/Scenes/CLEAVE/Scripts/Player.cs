@@ -9,15 +9,21 @@ public class Player : MonoBehaviour
     public float speed = 5f; // Velocidade de movimento do jogador
     public float jumpForce = 10f; // Força do pulo
     public int maxJumps = 2; // Número máximo de pulos
-    public float dashDuration;
-    public float dashForce = 5f; // Força do dash
-    public float dashCooldown = 15f; // Cooldown do dash em segundos
     public GameObject attackObject; // Objeto de ataque (defina isso no Unity)
     public float attackDuration = 0.5f; // Duração do ataque (tempo que o objeto ficará ativado)
     public GameObject bulletPrefab; // Prefab da bala (defina isso no Unity)
     public Transform firePoint; // Ponto de disparo (posicione no jogador no Unity)
     public int maxhealth;
+    
+    private float lastAttackTime = 0f; // Armazena o tempo do último ataque
+    public float attackCooldown = 0.5f; // Tempo de espera entre ataques
 
+    
+    private bool CanDash = true;
+    private bool isdashing;
+    private float dashTimer = 0.2f;
+    private float dashCooldown = 1f;
+    public float dashCoolpower = 8f;
     
     public float gravityScale = 1f; // Gravidade personalizada do player
     private bool Jumping;
@@ -29,14 +35,19 @@ public class Player : MonoBehaviour
     private int jumpsRemaining; // Número de pulos restantes
     private int currentLife; // Vida atual do jogador
     
-    private bool isDashing = false; // Flag para verificar se o jogador está realizando um dash
-    private bool isShiftPressed = false; // Flag para controlar se a tecla Shift está pressionada
+    public float shootCooldown = 0.5f; // Tempo de espera entre os disparos
+    private float lastShootTime; // Tempo do último disparo
+    
+    
+     // Flag para controlar se a tecla Shift está pressionada
     private bool facingRight = true; // Define se o jogador está virado para a direita
-    private float lastDashTime; // Momento do último dash
+    
     
     private bool controlsEnabled = true;
     
     public static int health = 100; // Vida do jogador, valor padrão
+
+    [SerializeField] private TrailRenderer tr;
 
     public event Action<int> OnLifeChanged; // Evento para notificar mudanças na vida do jogador
 
@@ -55,7 +66,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
+        if (isdashing)
+        {
+            return;
+        }
         if (!controlsEnabled)
             return;
         // Atualiza o estado do jogador a cada frame
@@ -68,6 +82,17 @@ public class Player : MonoBehaviour
         {
             Die(); // Chama a função Die se a vida for menor ou igual a zero
         }
+
+        
+        
+        if (Input.GetKeyDown(KeyCode.LeftShift) && CanDash) // Verifica se a tecla Shift está pressionada e se o cooldown foi atingido
+        {
+            
+            StartCoroutine(Dash()); // Inicia o dash
+            // lastDashTime = Time.time; // Atualiza o momento do último dash
+        }
+        
+        
     }
 
     void HandleInput()
@@ -80,9 +105,10 @@ public class Player : MonoBehaviour
         }
         
         // Verifica se a tecla "C" foi pressionada para disparar a bala
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && Time.time >= lastShootTime + shootCooldown)
         {
-            Shoot(); // Chama o método de disparo
+            Shoot();
+            lastShootTime = Time.time; // Atualiza o tempo do último disparo
         }
         
         /*// Agachar
@@ -95,15 +121,7 @@ public class Player : MonoBehaviour
             GetComponent<BoxCollider2D>().size = new Vector2(GetComponent<BoxCollider2D>().size.x, 0.4830437f); // Retorna a altura do collider ao normal
         }*/
         
-        // Verificar se a tecla Shift está sendo pressionada
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            isShiftPressed = true; // Marca a tecla Shift como pressionada
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            isShiftPressed = false; // Marca a tecla Shift como não pressionada
-        }
+        
     }
 
     void Move()
@@ -129,17 +147,20 @@ public class Player : MonoBehaviour
             {
                 anim.SetInteger("Transition", 1); // Animação de idle
             }
+            
+            
+            
         
         }
        
         
 
-        // Verifica a direção do movimento e faz o jogador virar se necessário
-        if (moveInput > 0 && facingRight)
+        /// Verifica a direção do movimento e faz o jogador virar se necessário
+        if (moveInput > 0 && facingRight && !attckon)
         {
             Flip(); // Vira o jogador para a direita
         }
-        else if (moveInput < 0 && !facingRight)
+        else if (moveInput < 0 && !facingRight && !attckon)
         {
             Flip(); // Vira o jogador para a esquerda
         }
@@ -154,7 +175,7 @@ public class Player : MonoBehaviour
     void Jump()
     {
         // Faz o jogador pular se as condições forem atendidas
-        if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0 && !isDashing) // Verifica se a tecla de espaço foi pressionada, ainda há pulos restantes e não está realizando um dash
+        if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0 && !isdashing) // Verifica se a tecla de espaço foi pressionada, ainda há pulos restantes e não está realizando um dash
         {
             anim.SetInteger("Transition", 3); // Animação de pulo
             Jumping = true;
@@ -180,32 +201,39 @@ public class Player : MonoBehaviour
     void HandleDash()
     {
         // Lida com a execução do dash se as condições forem atendidas
-        if (isShiftPressed && Time.time - lastDashTime > dashCooldown) // Verifica se a tecla Shift está pressionada e se o cooldown foi atingido
+        //if (Input.GetKeyDown(KeyCode.LeftShift) && CanDash) // Verifica se a tecla Shift está pressionada e se o cooldown foi atingido
         {
-            float dashInputHorizontal = Input.GetAxis("Horizontal");
-
-            if (dashInputHorizontal != 0)
-            {
-                StartCoroutine(Dash(dashInputHorizontal)); // Inicia o dash
-                lastDashTime = Time.time; // Atualiza o momento do último dash
-            }
+            
+               //StartCoroutine(Dash()); // Inicia o dash
+               // lastDashTime = Time.time; // Atualiza o momento do último dash
         }
     }
 
-    IEnumerator Dash(float horizontalInput)
+    IEnumerator Dash()
     {
-        // Executa o dash por um curto período
-        isDashing = true; // Define que o jogador está realizando um dash
+        CanDash = false;
+        isdashing = true;
+        anim.SetInteger("Transition", 15);
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2((facingRight ? -1 : 1) * dashCoolpower, 0f);
 
-        Vector2 dashDirection = new Vector2(horizontalInput, 0).normalized; // Obtém a direção do dash normalizada
-        rb.velocity = dashDirection * dashForce; // Aplica a força do dash na direção especificada
-
-        yield return new WaitForSeconds(0.5f); // Tempo de duração do dash
-        isDashing = false; // Finaliza o dash
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashTimer);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isdashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        CanDash = true;
+        
+        
     }
 
     void Shoot()
-    {
+    {   
+        
+        anim.SetTrigger("shot");
+       
         // Cria uma bala no ponto de disparo e define sua direção
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); // Instancia a bala
 
@@ -214,11 +242,11 @@ public class Player : MonoBehaviour
         // Define a direção da bala dependendo de para onde o jogador está virado
         if (facingRight)
         {
-            bulletScript.SetDirection(Vector2.right); // Atira para a direita
+            bulletScript.SetDirection(Vector2.left); // Atira para a direita
         }
         else
         {
-            bulletScript.SetDirection(Vector2.left); // Atira para a esquerda
+            bulletScript.SetDirection(Vector2.right); // Atira para a esquerda
         }
     }
 
@@ -264,6 +292,7 @@ public class Player : MonoBehaviour
     {
         // Ação a ser realizada quando o jogador morrer
         Debug.Log("Player morreu!");
+        anim.SetInteger("Transition", 16);
     }
 
     void Flip()
@@ -279,15 +308,26 @@ public class Player : MonoBehaviour
 
     IEnumerator Attack()
     {
-        // Executa o ataque e ativa o objeto de ataque por um tempo
-        anim.SetInteger("Transition", 4); // Animação de ataque
-        attackObject.SetActive(true); // Ativa o objeto de ataque
-        attckon = true;
+        // Verifica se o cooldown de ataque passou
+        if (Time.time - lastAttackTime >= attackCooldown)
+        {
+            lastAttackTime = Time.time; // Atualiza o tempo do último ataque
 
-        yield return new WaitForSeconds(attackDuration); // Aguarda a duração do ataque
-        anim.SetInteger("Transition", 1); // Volta para a animação de idle
-        attackObject.SetActive(false); // Desativa o objeto de ataque
-        attckon = false;
+            anim.SetInteger("Transition", 4); // Define a animação de ataque
+            attckon = true;
+
+            // Aguarda 0.2 segundos antes de ativar o objeto de ataque
+            yield return new WaitForSeconds(0.2f);
+
+            attackObject.SetActive(true); // Ativa o objeto de ataque
+
+            // Aguarda pelo tempo de duração do ataque
+            yield return new WaitForSeconds(attackDuration);
+
+            attackObject.SetActive(false); // Desativa o objeto de ataque
+            anim.SetInteger("Transition", 1); // Volta para a animação de idle
+            attckon = false;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -295,7 +335,7 @@ public class Player : MonoBehaviour
         // Verifica se o jogador colidiu com o chão
         if (collision.gameObject.layer == 6) // Checa se a colisão foi com o chão
         {
-            anim.SetInteger("Transition", 1); // Define a animação para idle
+            //anim.SetInteger("Transition", 1); // Define a animação para idle
             Jumping = false;
             jumpsRemaining = maxJumps; // Reinicia o número de pulos restantes ao tocar no chão
         }

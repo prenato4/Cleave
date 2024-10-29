@@ -15,7 +15,8 @@ public class Hunt : MonoBehaviour
     
     public int maxHealth = 100;  // Vida máxima do boss
     public int currentHealth;   // Vida atual do boss
-
+    
+    public float spawnInterval = 15f;
 
     private bool facingRight = true; // Define se o boss está virado para a direita
     
@@ -34,6 +35,9 @@ public class Hunt : MonoBehaviour
 
         // Iniciar a rotina de disparo
         StartCoroutine(FireArrow());
+        
+        // Iniciar a rotina de disparo
+        StartCoroutine(spawnTrapp());
     }
 
     private void Update()
@@ -50,11 +54,11 @@ public class Hunt : MonoBehaviour
     void FlipTowardsPlayer()
     {
         // Verifica se o player está à direita ou à esquerda
-        if (player.position.x > transform.position.x && !facingRight)
+        if (player.position.x > transform.position.x && facingRight)
         {
             Flip();
         }
-        else if (player.position.x < transform.position.x && facingRight)
+        else if (player.position.x < transform.position.x && !facingRight)
         {
             Flip();
         }
@@ -81,8 +85,18 @@ public class Hunt : MonoBehaviour
             // Disparar flecha na direção do player
             ShootAtPlayer();
             
-            // Spawn armadilha aleatoriamente
-            SpawnTrap();
+        }
+    }
+    
+    IEnumerator spawnTrapp()
+    {
+        while (true)
+        {
+            // Espera 10 segundos
+            yield return new WaitForSeconds(spawnInterval);
+
+           StartCoroutine(SpawnTrap());
+            
         }
     }
     
@@ -93,6 +107,7 @@ public class Hunt : MonoBehaviour
             // Verifica se o boss ainda tem vida
             if (currentHealth > 0)
             {
+                anim.SetTrigger("hit");
                 // Se quiser adicionar uma animação de hit, faça isso aqui
                 Debug.Log("Boss recebeu dano! Vida atual: " + currentHealth);
             }
@@ -117,28 +132,32 @@ public class Hunt : MonoBehaviour
         // Define a direção da flecha dependendo de para onde o boss está virado
         if (facingRight)
         {
-            bulletScript.SetDirection(Vector2.right); // Atira para a direita
+            bulletScript.SetDirection(Vector2.left); // Atira para a direita
         }
         else
         {
-            bulletScript.SetDirection(Vector2.left); // Atira para a esquerda
+            bulletScript.SetDirection(Vector2.right); // Atira para a esquerda
         }
 
         // Retornar à animação padrão após um pequeno delay
         StartCoroutine(ResetToDefaultAnimation());
     }
     
-    void SpawnTrap()
+    private IEnumerator SpawnTrap()
     {
+        yield return new WaitForSeconds(10f);
+        anim.SetInteger("Transition", 8);
         // Gera uma distância aleatória dentro do intervalo definido
         float randomDistance = Random.Range(trapMinDistance, trapMaxDistance);
 
         // Calcula a posição da armadilha com base na direção do boss
-        Vector2 spawnDirection = facingRight ? Vector2.right : Vector2.left;
+        Vector2 spawnDirection = facingRight ? Vector2.left : Vector2.right;
         Vector2 spawnPosition = (Vector2)transform.position + spawnDirection * randomDistance;
 
         // Cria a armadilha na posição calculada
         Instantiate(trapPrefab, spawnPosition, Quaternion.identity);
+
+        
     }
     
     
@@ -154,9 +173,9 @@ public class Hunt : MonoBehaviour
     
      void Die()
         {
-          
+            anim.SetTrigger("death");
     
             // Desativa ou destrói o boss após a morte
-             Destroy(gameObject); // Se quiser destruir o objeto
+             Destroy(gameObject, 0.5f); // Se quiser destruir o objeto
         }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Erali : MonoBehaviour
@@ -5,11 +6,19 @@ public class Erali : MonoBehaviour
     public Hunt huntBoss;  // Referência para o script de vida do Hunt
     public int healingAmount = 20;  // Quantidade de vida que Erali vai curar
     public float healInterval = 10f;  // Intervalo de 10 segundos para curar
+    public GameObject healingParticles; // Referência para o sistema de partículas de cura
 
     private float healTimer;  // Temporizador para controlar o tempo de cura
     
     public int maxHealth = 100;  // Vida máxima da Erali
     public int currentHealth;    // Vida atual da Erali
+    public float objectActiveDuration = 5f;
+    public GameObject objectToActivate;  // Objeto a ser ativado
+    public GameObject spawnPrefab;       // Prefab do objeto a ser instanciado
+    public float spawnInterval = 0.5f;   // Intervalo entre cada instância
+    public float spawnDelay = 20f;       // Tempo entre cada grupo de instâncias
+
+    private float spawnTimer;
     
     
     public float speed = 2f; // Velocidade de movimento da Erali
@@ -23,7 +32,7 @@ public class Erali : MonoBehaviour
 
     void Start()
     {
-        
+        spawnTimer = spawnDelay;  
         currentHealth = maxHealth;          // Define a vida inicial como o valor máximo
         
         healTimer = healInterval;  // Inicia o temporizador
@@ -52,8 +61,18 @@ public class Erali : MonoBehaviour
             HealHunt();
             healTimer = healInterval;  // Reinicia o temporizador
         }
+        FollowHunt();
+        //Move();
         
-        Move();
+        
+        // Contagem regressiva para instanciar o próximo grupo de objetos
+        spawnTimer -= Time.deltaTime;
+        if (spawnTimer <= 0f)
+        {
+            StartCoroutine(SpawnObjects());
+            ActivateObject();
+            spawnTimer = spawnDelay;  // Reinicia o temporizador para o próximo grupo
+        }
     }
     
     void Move()
@@ -88,11 +107,81 @@ public class Erali : MonoBehaviour
     {
         if (direction.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); // Virar para a direita
+            transform.localScale = new Vector3(-1, 1, 1); // Virar para a direita
         }
         else if (direction.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1); // Virar para a esquerda
+            transform.localScale = new Vector3(1, 1, 1); // Virar para a esquerda
+        }
+    }
+    
+    IEnumerator SpawnObjects()
+    {
+        // Instancia um grupo de objetos com intervalo de spawnInterval
+        for (int i = 0; i < 5; i++)  // Ajuste o número de instâncias conforme necessário
+        {
+            Instantiate(spawnPrefab, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(spawnInterval);
+        }
+    }
+    
+    void ActivateObject()
+    {
+        // Ativa o objeto desativado
+        if (objectToActivate != null)
+        {
+            ActivateHealingParticles();
+            objectToActivate.SetActive(true);
+            StartCoroutine(DeactivateObjectAfterDelay(objectActiveDuration)); // Inicia a corrotina para desativar o objeto
+        }
+    }
+    
+    IEnumerator DeactivateObjectAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);  // Espera o tempo especificado
+        if (objectToActivate != null)
+        {
+            objectToActivate.SetActive(false);  // Desativa o objeto
+        }
+    }
+    
+    void FollowHunt()
+    {
+        if (huntBoss != null)
+        {
+            float distanceToHunt = Vector2.Distance(transform.position, huntBoss.transform.position);
+            float minDistance = 2f; // Distância mínima desejada
+            float fixedHeight = 1f; // Altura fixa da Erali
+
+            // Segue o Hunt se estiver além da distância mínima
+            if (distanceToHunt > minDistance)
+            {
+                Vector2 directionToHunt = (huntBoss.transform.position - transform.position).normalized;
+                Vector3 targetPosition = transform.position + (Vector3)directionToHunt * speed * Time.deltaTime;
+
+                // Define a altura fixa mantendo a posição Y constante
+                targetPosition.y = fixedHeight;
+                transform.position = targetPosition;
+
+                // Chama o método para virar o sprite dependendo da direção
+                AlignRotationWithHunt();
+            }
+        }
+    }
+    
+    void AlignRotationWithHunt()
+    {
+        if (huntBoss != null)
+        {
+            // Ajusta a rotação no eixo Y para combinar com a direção do Hunt
+            if (huntBoss.transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z); // Olhando para a direita
+            }
+            else
+            {
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z); // Olhando para a esquerda
+            }
         }
     }
     
@@ -127,15 +216,34 @@ public class Erali : MonoBehaviour
     {
         if (huntBoss != null)
         {
-            huntBoss.currentHealth += healingAmount;  // Aumenta a vida diretamente
-
-            // Garante que a vida não ultrapasse o máximo
-            if (huntBoss.currentHealth > huntBoss.maxHealth)
+            // Verifica se a vida do Hunt está abaixo do máximo
+            if (huntBoss.currentHealth < huntBoss.maxHealth)
             {
-                huntBoss.currentHealth = huntBoss.maxHealth;
-            }
+                // Aumenta a vida do Hunt pela quantidade de cura
+                huntBoss.currentHealth += healingAmount;
 
-            Debug.Log("Erali curou Hunt em " + healingAmount + " de vida! Vida atual: " + huntBoss.currentHealth);
+                // Garante que a vida do Hunt não ultrapasse o máximo
+                if (huntBoss.currentHealth > huntBoss.maxHealth)
+                {
+                    huntBoss.currentHealth = huntBoss.maxHealth;
+                }
+
+                Debug.Log("Erali curou Hunt em " + healingAmount + " de vida! Vida atual: " + huntBoss.currentHealth);
+                
+                ActivateHealingParticles();
+            }
+        }
+    }
+    
+    void ActivateHealingParticles()
+    {
+        if (healingParticles != null)
+        {
+            // Instancia as partículas na posição da Erali
+            GameObject particles = Instantiate(healingParticles, transform.position, Quaternion.identity);
+        
+            // Destrói as partículas após um tempo (ajuste o tempo conforme necessário)
+            Destroy(particles, 2f);
         }
     }
     

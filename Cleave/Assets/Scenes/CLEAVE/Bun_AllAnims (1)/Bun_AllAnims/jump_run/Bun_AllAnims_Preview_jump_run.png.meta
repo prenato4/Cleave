@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: 35bb52d2a29c13545a9edcd8560d6ad2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 416
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702ad373bb0ee4d408f7e9b4e896bf30
+      internalID: 1574688366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 417
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a450bf82591ba248917cbabaae2a0ad
+      internalID: -1711636876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 418
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9949a0f8c6ec024a9d739a8bd3ccb93
+      internalID: 1795545127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 419
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaec4247bc3d7ce448eb296d6fb31091
+      internalID: -90197909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 422
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb60e1388a3e1a4883924ffa54f0b9c
+      internalID: -626551889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 422
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2acb813b80b4a4b944e8362d7fd658
+      internalID: -1120635628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 330
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01d2a86f73c0014ca6c52c319f5ffc5
+      internalID: 999157588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 331
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa41a3e3e4df484d85f0e641ed78629
+      internalID: -1633904991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 332
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3f945072c45bd4d86cf3ebd08bbd2d
+      internalID: 110733935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 333
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93374fbc841ac1f46a958f38725a6bbc
+      internalID: -1347927292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 333
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653d86ef1c2bbe14eabf360c0e6ed2da
+      internalID: 1821486969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 332
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bee049396dced34488f4a69e4e27914
+      internalID: 945337524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 239
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2aa3dc629c934743a6cd2f48188df6e
+      internalID: 1762218601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_13
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 238
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786320fb55ccfd742af63029c8487d22
+      internalID: 46699144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 238
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad822c0ccd27324eadc6f06f282dfff
+      internalID: -1094062394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 237
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80877e09616a644094bea9de32c0bfd
+      internalID: 511779929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 237
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b6423c6c91ff54d8717c44d987f3eb
+      internalID: -1121145299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 237
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a86fb153704f749b503b2dbf2c5e7e
+      internalID: 2046902069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 144
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5d7e606e152e8428b385f17e8172d0
+      internalID: 1340972364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 143
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d4d1e5e5e30c842a5671860b75d304
+      internalID: 928255214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 143
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5906e1587da8fb4e9a191a535969e99
+      internalID: -1512662990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 142
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a434117300c16d84f9d1719cf08b1485
+      internalID: 99574542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_22
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 142
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575b03dda3e0dc94986968c18985ee0a
+      internalID: 1205276054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_23
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 140
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a337d5770581891419672abe2760c91a
+      internalID: -1057031075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 47
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1982ed86aeec6714b9a95e251834202d
+      internalID: -2043444207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_25
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 46
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b528add36706d774fa351656162be66c
+      internalID: 869097811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 46
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5794cfba141d1440a9aae080e71645e
+      internalID: -244203045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_27
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 45
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a472c6df1d48347b1f4b5aeb3b409d
+      internalID: -710357865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 45
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bca302f8e22d5244b0170a46cb5b353
+      internalID: -1601329443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bun_AllAnims_Preview_jump_run_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 44
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0725208e660944ab7490c97f8b63d5
+      internalID: 1610822675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bun_AllAnims_Preview_jump_run_0: 1574688366
+      Bun_AllAnims_Preview_jump_run_1: -1711636876
+      Bun_AllAnims_Preview_jump_run_10: 1821486969
+      Bun_AllAnims_Preview_jump_run_11: 945337524
+      Bun_AllAnims_Preview_jump_run_12: 1762218601
+      Bun_AllAnims_Preview_jump_run_13: 46699144
+      Bun_AllAnims_Preview_jump_run_14: -1094062394
+      Bun_AllAnims_Preview_jump_run_15: 511779929
+      Bun_AllAnims_Preview_jump_run_16: -1121145299
+      Bun_AllAnims_Preview_jump_run_17: 2046902069
+      Bun_AllAnims_Preview_jump_run_18: 1340972364
+      Bun_AllAnims_Preview_jump_run_19: 928255214
+      Bun_AllAnims_Preview_jump_run_2: 1795545127
+      Bun_AllAnims_Preview_jump_run_20: -1512662990
+      Bun_AllAnims_Preview_jump_run_21: 99574542
+      Bun_AllAnims_Preview_jump_run_22: 1205276054
+      Bun_AllAnims_Preview_jump_run_23: -1057031075
+      Bun_AllAnims_Preview_jump_run_24: -2043444207
+      Bun_AllAnims_Preview_jump_run_25: 869097811
+      Bun_AllAnims_Preview_jump_run_26: -244203045
+      Bun_AllAnims_Preview_jump_run_27: -710357865
+      Bun_AllAnims_Preview_jump_run_28: -1601329443
+      Bun_AllAnims_Preview_jump_run_29: 1610822675
+      Bun_AllAnims_Preview_jump_run_3: -90197909
+      Bun_AllAnims_Preview_jump_run_4: -626551889
+      Bun_AllAnims_Preview_jump_run_5: -1120635628
+      Bun_AllAnims_Preview_jump_run_6: 999157588
+      Bun_AllAnims_Preview_jump_run_7: -1633904991
+      Bun_AllAnims_Preview_jump_run_8: 110733935
+      Bun_AllAnims_Preview_jump_run_9: -1347927292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

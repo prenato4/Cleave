@@ -13,6 +13,7 @@ public class Fadinhas : MonoBehaviour
     private Vector2 currentMoveDirection; // Direção atual do movimento
     private bool isReturning = false; // Indica se a fada está voltando ao ponto inicial
 
+    private Animator animator;
     public bool playerAttacked = false; // Indica se o jogador atacou a fada
     public float attackRange = 2f; // Distância mínima para a fada atacar
     public float chaseRange = 5f; // Distância mínima para a fada começar a seguir o jogador
@@ -44,14 +45,14 @@ public class Fadinhas : MonoBehaviour
 
     void Update()
     {
-        if (playerAttacked)
-        {
+        
+        
             // Começa a seguir o jogador se estiver dentro do alcance de perseguição
             if (Vector2.Distance(transform.position, player.position) <= chaseRange)
             {
                 isChasing = true;
             }
-        }
+        
 
         if (isChasing)
         {
@@ -62,7 +63,7 @@ public class Fadinhas : MonoBehaviour
             Move(); // Chama o método de movimento padrão da fada
         }
 
-        if (playerAttacked && Vector2.Distance(transform.position, player.position) <= attackRange)
+        if (Vector2.Distance(transform.position, player.position) <= attackRange)
         {
             if (Time.time >= nextAttackTime)
             {
@@ -110,18 +111,20 @@ public class Fadinhas : MonoBehaviour
         if (direction.x > 0)
         {
             // Virar sprite para a direita
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (direction.x < 0)
         {
             // Virar sprite para a esquerda
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 
     public void Damage(int damage)
     {
+        //animator.SetTrigger("Damage");
         fairyHealth -= damage; // Reduz a vida da fada
+        
         if (fairyHealth <= 0)
         {
             Die(); // A fada morre se a vida chegar a zero
