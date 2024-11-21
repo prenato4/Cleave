@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,448 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: patinha_export_attack_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735373027f638dc4cb97cf6b8b75ec9f
+      internalID: 1468660680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 343
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f944b8862f92d47b2931931ef0ae97
+      internalID: 1373260931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 343
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389400643e201cc45af74610cd78bd25
+      internalID: -216220607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 343
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2290ff24b0116645b02bf6dbb20a276
+      internalID: 215922649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_4
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 343
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3066d97969a30a0439c8e19e6ce387ce
+      internalID: 2138006352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 263
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ca5b903445910479eef7c3a10eb604
+      internalID: -314462281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 264
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1671470d8eafb4b4fa0af92557b0bfe9
+      internalID: 1370714467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_7
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 264
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dd0d797dd1f914ba2902556ca78276
+      internalID: 2023091396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 264
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8988cc3f67d7dd44cbaa5526dd51cd9f
+      internalID: 202996127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_9
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 264
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9babf225db60ad949b1e5e8925d25367
+      internalID: -364713185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 185
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263f9d945e1dda34fbce22ca2ec7c7ba
+      internalID: -196365986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 185
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8c5b29ecf36b6478ea6e042231fef5
+      internalID: -896122808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 185
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa101ce50793424e9cfeb3c762a396c
+      internalID: 1791223357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 185
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f165f28b95b37f14487f4639a9aa02ca
+      internalID: -2024695276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_14
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 185
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee9a20e19b1f2f4ab5d6486d19d962e
+      internalID: -744384219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 106
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838a670d11c64894ebb1a27a3a176440
+      internalID: -301542740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 106
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727d2295e61e4c944bbc03b1a323c9f0
+      internalID: 1749018715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_17
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 106
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3092f648d472a784885ff9601e53d6a6
+      internalID: -21237629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 106
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dca8f5012ffe2042bd909d52e1c0987
+      internalID: -1727375595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_19
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 106
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a78f5cb0f4b9fb4ebb25d5faf0a37a8
+      internalID: 146841142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_attack_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 27
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e39e50f78bb5ad429df2bd94861650b
+      internalID: -1861256190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +560,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      patinha_export_attack_0: 1468660680
+      patinha_export_attack_1: 1373260931
+      patinha_export_attack_10: -196365986
+      patinha_export_attack_11: -896122808
+      patinha_export_attack_12: 1791223357
+      patinha_export_attack_13: -2024695276
+      patinha_export_attack_14: -744384219
+      patinha_export_attack_15: -301542740
+      patinha_export_attack_16: 1749018715
+      patinha_export_attack_17: -21237629
+      patinha_export_attack_18: -1727375595
+      patinha_export_attack_19: 146841142
+      patinha_export_attack_2: -216220607
+      patinha_export_attack_20: -1861256190
+      patinha_export_attack_3: 215922649
+      patinha_export_attack_4: 2138006352
+      patinha_export_attack_5: -314462281
+      patinha_export_attack_6: 1370714467
+      patinha_export_attack_7: 2023091396
+      patinha_export_attack_8: 202996127
+      patinha_export_attack_9: -364713185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

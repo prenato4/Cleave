@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: patinha_export_idle_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 185
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad03260e549b57a49ac8cc589862677f
+      internalID: 105463251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 185
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab4cab1e7ec6cd44bde899668657ced
+      internalID: 1060255137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 185
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2a4e28a4d44fd4aa6aa7972382cfc6
+      internalID: -1989545092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 185
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543122caa3f1589448e0efcdf6cfad3e
+      internalID: -1205400752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 106
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7ba5a60b0df414b8186cbd371827d9
+      internalID: 184261961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 106
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b83573afdf5ef549a7586acdc22b31f
+      internalID: -1706507249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 106
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7500451bd06aa104c9b7055307d1b491
+      internalID: -628007430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 106
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5129d2cdddad23945b15d30b085f231c
+      internalID: 1965527893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 27
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1911e790a5617479719ff1e127338c
+      internalID: -761221695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 27
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60e3fbff8643944f9812742be3bb351
+      internalID: -529008616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 27
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273d8facdc0be5e4898ea176876f6881
+      internalID: -366700897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_idle_11
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 27
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01161a1a8114a4d45849e0d70c475ef2
+      internalID: 1959446153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +371,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      patinha_export_idle_0: 105463251
+      patinha_export_idle_1: 1060255137
+      patinha_export_idle_10: -366700897
+      patinha_export_idle_11: 1959446153
+      patinha_export_idle_2: -1989545092
+      patinha_export_idle_3: -1205400752
+      patinha_export_idle_4: 184261961
+      patinha_export_idle_5: -1706507249
+      patinha_export_idle_6: -628007430
+      patinha_export_idle_7: 1965527893
+      patinha_export_idle_8: -761221695
+      patinha_export_idle_9: -529008616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

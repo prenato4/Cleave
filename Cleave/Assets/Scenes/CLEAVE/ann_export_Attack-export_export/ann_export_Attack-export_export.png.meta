@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: 98cc505148d1b6f41bb5aeef2b54f6df
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 566
+        width: 38
+        height: 66
+      alignment: 9
+      pivot: {x: 0.27238303, y: 0.24912794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8830bcb09a90d4a8dd372ab67bf4d8
+      internalID: -1140450721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 566
+        width: 37
+        height: 67
+      alignment: 9
+      pivot: {x: 0.27291003, y: 0.24918468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e2376876990c849904b281db74000b
+      internalID: -397691115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 567
+        width: 34
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3328256, y: 0.26445675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d767ca7a1167164eba8568e94aacac0
+      internalID: -206187823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 567
+        width: 36
+        height: 63
+      alignment: 9
+      pivot: {x: 0.38157737, y: 0.26575676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4f8cb38ec169a4589cd065476d0da2
+      internalID: 1840714852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_4
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 568
+        width: 34
+        height: 63
+      alignment: 9
+      pivot: {x: 0.34567618, y: 0.23972963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf93134f22a34c341abafd9500ca1c81
+      internalID: -1581605000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_5
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 569
+        width: 54
+        height: 54
+      alignment: 9
+      pivot: {x: 0.57053745, y: 0.26634952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1853d9455ae694fb7b9a9a33c546c7
+      internalID: 69785845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 439
+        width: 67
+        height: 59
+      alignment: 9
+      pivot: {x: 0.68860215, y: 0.24298872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b461c427e1abf5499158f7c6219ea2a
+      internalID: 714369793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 439
+        width: 66
+        height: 53
+      alignment: 9
+      pivot: {x: 0.6866732, y: 0.24965625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470c01909ce09a94a9f4d52cdf9a2df0
+      internalID: -243223478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 439
+        width: 66
+        height: 37
+      alignment: 9
+      pivot: {x: 0.7010322, y: 0.33777514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bd07497880852449bec98a9f15a2ae
+      internalID: 143078487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_9
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 439
+        width: 66
+        height: 36
+      alignment: 9
+      pivot: {x: 0.7058189, y: 0.35081905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b11ded70b5d8e4ba025f61e24a3298
+      internalID: 632625902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 437
+        width: 69
+        height: 37
+      alignment: 9
+      pivot: {x: 0.7106049, y: 0.39754176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86c10909e770544782d35ab904ce69d
+      internalID: -708491699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_11
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 436
+        width: 71
+        height: 38
+      alignment: 9
+      pivot: {x: 0.70022285, y: 0.4501182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9fffdba67d97c488cb758dcc38bdca
+      internalID: 269552735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 306
+        width: 74
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7045168, y: 0.46443978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68de6edd41367384298e0be7832895f5
+      internalID: -159405640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 306
+        width: 72
+        height: 38
+      alignment: 9
+      pivot: {x: 0.69518363, y: 0.443104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042a68ea8ef3bfd488ea452aa029abe6
+      internalID: 926138890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_14
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 306
+        width: 72
+        height: 38
+      alignment: 9
+      pivot: {x: 0.70269054, y: 0.443104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366b938dd67876b46980edc37198f1a3
+      internalID: -809503501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 306
+        width: 71
+        height: 38
+      alignment: 9
+      pivot: {x: 0.70173883, y: 0.443104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64779e59308e61a4c861391334f7b75d
+      internalID: -1005975774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_16
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 306
+        width: 69
+        height: 38
+      alignment: 9
+      pivot: {x: 0.69975305, y: 0.4288796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca8e84c470a7e44890b84eaf3e7c18a
+      internalID: 590243026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_17
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 305
+        width: 65
+        height: 40
+      alignment: 9
+      pivot: {x: 0.7037297, y: 0.4391922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be0f2611c97bc94d956dbab661f5eed
+      internalID: 234316627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 175
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee890023fc8063547b45b809ea8f6133
+      internalID: -1516168668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_19
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 175
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255c5bff221b5d345b236c2ee6cc5790
+      internalID: -583755305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163b1f4cb5f668c4babd327804388e01
+      internalID: 5479889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_21
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 176
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cb63ead30da31429933c6cd778e4ca
+      internalID: 1759948800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_22
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 176
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e49dbfbd42f2024e8a02f0bcb3b1693
+      internalID: 718878143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_23
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 176
+        width: 67
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30b301e0d6bdc04dab4ad89658c6181
+      internalID: -1489677477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_24
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 46
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa750205de23444b8bedb2a6ab00181
+      internalID: 1042426884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_25
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 46
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd93df727828dd43af35e312bf0b808
+      internalID: -1633815539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_26
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 47
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea0341a2d0a37e4e86a41f4064f86fc
+      internalID: -995161923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_27
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 47
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe0f932979e19344adbd975c0193415
+      internalID: -968705209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_28
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 46
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b71fce2ba2c1594ea734173f96ee356
+      internalID: -384187592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ann_export_Attack-export_export_29
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 46
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc4e712de509504c8ce062cd34d47f1
+      internalID: 984472302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ann_export_Attack-export_export_0: -1140450721
+      ann_export_Attack-export_export_1: -397691115
+      ann_export_Attack-export_export_10: -708491699
+      ann_export_Attack-export_export_11: 269552735
+      ann_export_Attack-export_export_12: -159405640
+      ann_export_Attack-export_export_13: 926138890
+      ann_export_Attack-export_export_14: -809503501
+      ann_export_Attack-export_export_15: -1005975774
+      ann_export_Attack-export_export_16: 590243026
+      ann_export_Attack-export_export_17: 234316627
+      ann_export_Attack-export_export_18: -1516168668
+      ann_export_Attack-export_export_19: -583755305
+      ann_export_Attack-export_export_2: -206187823
+      ann_export_Attack-export_export_20: 5479889
+      ann_export_Attack-export_export_21: 1759948800
+      ann_export_Attack-export_export_22: 718878143
+      ann_export_Attack-export_export_23: -1489677477
+      ann_export_Attack-export_export_24: 1042426884
+      ann_export_Attack-export_export_25: -1633815539
+      ann_export_Attack-export_export_26: -995161923
+      ann_export_Attack-export_export_27: -968705209
+      ann_export_Attack-export_export_28: -384187592
+      ann_export_Attack-export_export_29: 984472302
+      ann_export_Attack-export_export_3: 1840714852
+      ann_export_Attack-export_export_30: -681619468
+      ann_export_Attack-export_export_4: -1581605000
+      ann_export_Attack-export_export_5: 69785845
+      ann_export_Attack-export_export_6: 714369793
+      ann_export_Attack-export_export_7: -243223478
+      ann_export_Attack-export_export_8: 143078487
+      ann_export_Attack-export_export_9: 632625902
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

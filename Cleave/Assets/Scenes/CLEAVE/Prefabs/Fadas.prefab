@@ -200,7 +200,7 @@ MonoBehaviour:
   playerAttacked: 0
   attackRange: 2
   chaseRange: 5
-  fairyHealth: 5
+  fairyHealth: 100
   fairyDamage: 1
   attackCooldown: 1.5
 --- !u!1 &6128656989294459206

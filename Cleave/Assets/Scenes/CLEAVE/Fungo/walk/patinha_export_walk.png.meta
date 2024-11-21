@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: patinha_export_walk_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9727a0d658af1748bf5e1eaad5d7ed8
+      internalID: 263615814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e797035fcc79b1246a3e8a3f303ff192
+      internalID: 1644148791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265032c39472d1046a2774ddee3711d8
+      internalID: 496569875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c474c12db080a48a7f755450069f56
+      internalID: 1291142157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_4
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95244265d6a168f4c8ec59948169b0a1
+      internalID: -929893652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_5
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 343
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f25802784624314fab85a946a9c76f4
+      internalID: 213402538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 264
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8311c22668348484c8dda1639212bb5f
+      internalID: -818872341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 264
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9eda30daa9c5f45af8cb0a26fdef55
+      internalID: -1368393088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_8
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 264
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefb2f86fac1a6648ae6d3d50cd41288
+      internalID: 1501390803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_9
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 263
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ab33892c698964db2157dcc8c0734a
+      internalID: 2030737266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 263
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8525f493ceb12448841cb938e87fde8
+      internalID: 139996521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_11
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 263
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da5af51e1d52244f8e74e38d4c8eaf3
+      internalID: -41579096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 184
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dddfdb2bbb1c3949bd2df0e9d75a3d9
+      internalID: -2067002804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 184
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b85755e51b0cc4fbd0499c49e73993
+      internalID: 1989814002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 184
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac679872dfa9dbe41a5d8ceccd52fd82
+      internalID: 1489966006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_15
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 184
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a50817eb10776840884af3882678477
+      internalID: -237579935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_16
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 184
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0aa02ebeab7ff4d9bc8042a8627344
+      internalID: 1185349621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 184
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a448123b661b84ca76d56651aa6764
+      internalID: 1265624597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 105
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc1d26a134f52b45ae7e0597a62a86d
+      internalID: 708766071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 105
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ffb31ffec5e004391e495bb648de1b
+      internalID: 551553106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 105
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee8d127b8921b449b2bfa3991adc13f
+      internalID: 1789128036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_21
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 104
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbf7d4f47eacf54a8b613f2545b9216
+      internalID: -344625308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_22
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 104
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f938f19bae7c65b4f8624e452384c73c
+      internalID: -103811056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 104
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8e2cbb4068c2a4a9814953650c5fba
+      internalID: 301853268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 25
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedb63cc19f9dc64f8d6fc4c9561c937
+      internalID: 394266008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 25
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0241c2ef0fcc4438a13a30833e7cb0
+      internalID: 91254037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_26
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 26
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d06e4182aaa5b04fa15613e78094e0b
+      internalID: -1105436769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_27
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 26
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1375f6c7febda7b45b0a8b9fef448e53
+      internalID: -2134277203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_28
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 26
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3cdca083151834883fad7a3a6d6cbe
+      internalID: 2140101904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patinha_export_walk_29
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 27
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff2a2f89bf562f45be5cea9cd430ec5
+      internalID: -1383175068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +749,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      patinha_export_walk_0: 263615814
+      patinha_export_walk_1: 1644148791
+      patinha_export_walk_10: 139996521
+      patinha_export_walk_11: -41579096
+      patinha_export_walk_12: -2067002804
+      patinha_export_walk_13: 1989814002
+      patinha_export_walk_14: 1489966006
+      patinha_export_walk_15: -237579935
+      patinha_export_walk_16: 1185349621
+      patinha_export_walk_17: 1265624597
+      patinha_export_walk_18: 708766071
+      patinha_export_walk_19: 551553106
+      patinha_export_walk_2: 496569875
+      patinha_export_walk_20: 1789128036
+      patinha_export_walk_21: -344625308
+      patinha_export_walk_22: -103811056
+      patinha_export_walk_23: 301853268
+      patinha_export_walk_24: 394266008
+      patinha_export_walk_25: 91254037
+      patinha_export_walk_26: -1105436769
+      patinha_export_walk_27: -2134277203
+      patinha_export_walk_28: 2140101904
+      patinha_export_walk_29: -1383175068
+      patinha_export_walk_3: 1291142157
+      patinha_export_walk_4: -929893652
+      patinha_export_walk_5: 213402538
+      patinha_export_walk_6: -818872341
+      patinha_export_walk_7: -1368393088
+      patinha_export_walk_8: 1501390803
+      patinha_export_walk_9: 2030737266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

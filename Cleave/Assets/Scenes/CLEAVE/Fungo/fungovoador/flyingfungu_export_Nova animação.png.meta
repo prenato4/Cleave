@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "flyingfungu_export_Nova anima\xE7\xE3o_0"
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3ccd6ab9d1662458f477f8107146e2
+      internalID: -2004017284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "flyingfungu_export_Nova anima\xE7\xE3o_1"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276e21232783de44c9de2871e5bab944
+      internalID: 1538930346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "flyingfungu_export_Nova anima\xE7\xE3o_2"
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 19
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4469b408ab46d478e22f7e4770c235
+      internalID: -186958010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "flyingfungu_export_Nova anima\xE7\xE3o_3"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b954e203433a114e801b4e9e37d5166
+      internalID: 2126146319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "flyingfungu_export_Nova anima\xE7\xE3o_4"
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeef21bebc3dfce42bf1fcc6520a0d9b
+      internalID: -1322057174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "flyingfungu_export_Nova anima\xE7\xE3o_5"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108fcfae7638ba949b97c2a5f76f7ab5
+      internalID: 545126496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "flyingfungu_export_Nova anima\xE7\xE3o_0": -2004017284
+      "flyingfungu_export_Nova anima\xE7\xE3o_1": 1538930346
+      "flyingfungu_export_Nova anima\xE7\xE3o_2": -186958010
+      "flyingfungu_export_Nova anima\xE7\xE3o_3": 2126146319
+      "flyingfungu_export_Nova anima\xE7\xE3o_4": -1322057174
+      "flyingfungu_export_Nova anima\xE7\xE3o_5": 545126496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,6 +10,13 @@ public class Trap : MonoBehaviour
     public GameObject explosionEffect; // Efeito visual da explosão
 
     private bool isTriggered = false;
+    private Animator animator;
+
+    private void Start()
+    {
+        // Obtém o componente Animator da própria armadilha
+        animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -27,6 +34,12 @@ public class Trap : MonoBehaviour
 
     private IEnumerator ActivateTrap(GameObject player)
     {
+        // Ativar a animação da armadilha
+        if (animator != null)
+        {
+            animator.SetTrigger("nnn"); // "nnn" deve ser o nome do trigger configurado no Animator da armadilha
+        }
+
         // Prender o jogador (exemplo: desativar o controle do jogador)
         var playerController = player.GetComponent<Player>();
         if (playerController != null)
