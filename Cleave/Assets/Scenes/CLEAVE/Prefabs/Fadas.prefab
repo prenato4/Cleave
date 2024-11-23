@@ -203,6 +203,7 @@ MonoBehaviour:
   fairyHealth: 100
   fairyDamage: 1
   attackCooldown: 1.5
+  soulPrefab: {fileID: 5868491235536305106, guid: 77d7b68ee03c0864ea0a7a32847d89a3, type: 3}
 --- !u!1 &6128656989294459206
 GameObject:
   m_ObjectHideFlags: 0

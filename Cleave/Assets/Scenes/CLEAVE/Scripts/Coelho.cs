@@ -8,7 +8,6 @@ public class Coelho : MonoBehaviour
     public int danoAtaque = 1;
     public float alcanceAtaque = 1f;
     public float distanciaDeteccao = 5f; 
-    public float tempoInvulnerabilidade = 0.5f;
     public float tempoCooldown = 0.5f;
     public float forcaPuloMin = 5f;
     public float forcaPuloMax = 10f;
@@ -16,13 +15,14 @@ public class Coelho : MonoBehaviour
     public float duracaoAnimacaoAtaque = 0.3f; // Duração da animação de ataque
 
     private Transform jogador;
-    private bool invulneravel = false;
     private bool atacando = false;
     private bool emCooldown = false;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     private Animator animator;
     private float contadorCooldown = 0f;
+    
+    public GameObject soulPrefab; // Prefab da alma que será dropada
 
     private void Start()
     {
@@ -40,7 +40,6 @@ public class Coelho : MonoBehaviour
             if (contadorCooldown >= tempoCooldown)
             {
                 emCooldown = false;
-                invulneravel = false;
                 contadorCooldown = 0f;
                 spriteRenderer.color = Color.white;
             }
@@ -96,9 +95,7 @@ public class Coelho : MonoBehaviour
         if (!atacando)
         {
             atacando = true;
-            invulneravel = true;
             emCooldown = true;
-            //spriteRenderer.color = Color.red;
             animator.SetBool("isWalking", false);
             animator.SetBool("isAttacking", true);
 
@@ -122,24 +119,27 @@ public class Coelho : MonoBehaviour
 
         yield return new WaitForSeconds(duracaoAnimacaoAtaque); // Duração da animação de ataque
         animator.SetBool("isAttacking", false); // Finaliza a animação de ataque
-        yield return new WaitForSeconds(tempoInvulnerabilidade);
+        
         atacando = false;
     }
 
     public void Damage(int dano)
     {
-        if (!invulneravel)
+        vida -= dano;
+        if (vida <= 0)
         {
-            vida -= dano;
-            if (vida <= 0)
-            {
-                Morrer();
-            }
+            Morrer();
         }
     }
 
     private void Morrer()
     {
+        // Instantiate a alma no local do inimigo
+        Instantiate(soulPrefab, transform.position, Quaternion.identity);
+
+        // Notifica o GameManager
+        GameManager.Instance.AddSoul();
+        
         Destroy(gameObject);
     }
 }

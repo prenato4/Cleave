@@ -7,6 +7,7 @@ public class esporos : MonoBehaviour
     public float moveSpeed = 3f; // Velocidade de movimento dos esporos
     public float rotationSpeed = 200f; // Velocidade de rotação dos esporos
     public float lifespan = 5f; // Tempo de vida do esporo antes de ser destruído
+    public int damage = 1;
 
     private Vector2 _moveDirection;
 
@@ -27,5 +28,18 @@ public class esporos : MonoBehaviour
 
         // Gira o esporo
         transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+    }
+    
+    
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        // Verifica se o objeto colidido possui o componente "Player"
+        Player player = collider.GetComponent<Player>();
+        if (player != null)
+        {
+            // Aplica dano ao jogador
+            player.Damage(damage);
+            Destroy(gameObject); // Destrói o esporo após causar dano
+        }
     }
 }

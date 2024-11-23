@@ -27,6 +27,8 @@ public class Fungo : MonoBehaviour
     private AudioSource _audioSource;
     private Transform _player;
     private float _lastAttackTime;
+    
+    public GameObject soulPrefab;
 
     void Start()
     {
@@ -127,7 +129,7 @@ public class Fungo : MonoBehaviour
         }
     }
 
-    public void TakeEnergy(int damage)
+    public void Damage(int damage)
     {
         _currentEnergy -= damage;
 
@@ -136,8 +138,13 @@ public class Fungo : MonoBehaviour
             _currentEnergy = 0;
             _isAlive = false;
             _collider2D.enabled = false;
-            _animator.Play("Dead");
-            _audioSource.Play();
+            // Instantiate a alma no local do inimigo
+            Instantiate(soulPrefab, transform.position, Quaternion.identity);
+
+            // Notifica o GameManager
+            GameManager.Instance.AddSoul();
+            
+            Destroy(gameObject); // Destrói a fada quando ela morre
         }
 
         if (_currentEnergy > maxEnergy) _currentEnergy = maxEnergy;

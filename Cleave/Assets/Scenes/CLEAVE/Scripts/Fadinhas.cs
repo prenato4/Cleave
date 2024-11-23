@@ -25,6 +25,8 @@ public class Fadinhas : MonoBehaviour
     private Transform player;
     private Player playerController;
     private bool isChasing = false; // Indica se a fada está seguindo o jogador
+    
+    public GameObject soulPrefab;
 
     void Start()
     {
@@ -147,6 +149,12 @@ public class Fadinhas : MonoBehaviour
 
     void Die()
     {
+        // Instantiate a alma no local do inimigo
+        Instantiate(soulPrefab, transform.position, Quaternion.identity);
+
+        // Notifica o GameManager
+        GameManager.Instance.AddSoul();
+        
         Debug.Log("A fada morreu!");
         Destroy(gameObject); // Destrói a fada quando ela morre
     }

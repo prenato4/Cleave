@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: head_export_shoot_export_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 754
+        width: 34
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f533158c90e164abd4fc78cf4edf52
+      internalID: 1844613574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 749
+        width: 63
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9618b69a70c8cc4f84c94890de34cb8
+      internalID: 1387487243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 759
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b778ac4ea2916864ba15e4bfa6d5a9da
+      internalID: -1737161960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 749
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1b1a04f6b6605458d814a72953bdf2
+      internalID: 1606322778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 764
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7385751ae95e8c44f8319947fc5f93f2
+      internalID: 1582878857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_5
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 749
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348060b366a91c345ad4f269b098a7e4
+      internalID: -1663090301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_6
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 769
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebc127318a03954e8498ef24482364f
+      internalID: 1391369998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 749
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4a86b9e733e6d49ae290a55d7c26cb
+      internalID: 334818811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_8
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 767
+        width: 20
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8116943a6ed2f4aadf445af6444f02
+      internalID: 1455546372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 748
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202107ac6261b574f90bf24262c06e8f
+      internalID: -1492053039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_10
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 764
+        width: 18
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba281c20c1495d43bb9a2321e17ad93
+      internalID: 1985574645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_11
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 748
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c821cf9c94ac5814a908fd1fde6b1c41
+      internalID: 1298709154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 595
+        width: 14
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8628560aae9b73049970ce9ca3fb9b8b
+      internalID: -1542661635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 581
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a6f9066150f444782016adeb9f167b
+      internalID: -317029674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 595
+        width: 14
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40dbccd505ef0c48a93d44bfaa6e690
+      internalID: 1473899115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 581
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9abdbafd67d51409e3bf56d97929df
+      internalID: 919706571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 594
+        width: 16
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9148a36879199b6458beb3690a8591da
+      internalID: 1376200899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 581
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088794dfad9de5841a3bb53551e8185c
+      internalID: 2113940994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_18
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 594
+        width: 16
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bbf3567d2fade4ebb67f01af676ce2
+      internalID: -174008048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_19
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 581
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8dbc19463bfc245a82ff1e4095ccc2
+      internalID: 1175699691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_20
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 594
+        width: 17
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d272e02b79c6d5a4c9ce5d8224d3d4aa
+      internalID: 2108949968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_21
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 581
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a9817c30253394f98b6a37acabcd4f
+      internalID: -383371705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_22
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 594
+        width: 18
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368d2b40dddd73544b7864f8de648b72
+      internalID: -1146758141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 581
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f44a1f2ea36e094e99cd389fa9655a1
+      internalID: -680956541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_24
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 414
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbd6bbf5b98f144bb596fad20ed9fa4
+      internalID: 1938813437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_25
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 415
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d28dce69fb6d541b568f02bfac379a
+      internalID: 360879899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_26
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 414
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889f36b4a377d6f459ac0bac04ec10b8
+      internalID: 1862757107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_27
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 415
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4fc76308aa052419d0336f086f7941
+      internalID: -1619246553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_28
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 415
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622ed5d1bd853ca4fa492e60ccf2233b
+      internalID: -850319158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_29
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 415
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1f0ba017ebc754d84a9309612b8404
+      internalID: 1379570590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 248
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ca11db2dabda942888a095374b8b30
+      internalID: -220839527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_31
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 248
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e27b7dc95cdfd4a914c8e2f78b8b02
+      internalID: 1123704197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_32
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 248
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f48f23e6647d4478257a38eecea1ef
+      internalID: -604009334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_33
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 248
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320c8f30ab21f064592e06f50ae2a3d8
+      internalID: 407506172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_34
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 248
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2502d6bf25a8e43b56e2c86aff7f47
+      internalID: -370223570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_35
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 248
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37388a7c6e1c3345b3c2549a9ca18cb
+      internalID: 323073041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_36
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 81
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f26795cc99b3645aaeaf8b05a67f30
+      internalID: -1950325560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_37
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 81
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4066d5c833a6ece4c9f7ea2973e30610
+      internalID: -1714950356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_38
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 81
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d10736c025ba1428c0ef310038c86a
+      internalID: -2097115851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_39
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 81
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff494b377fc1134c9030b81e1ffb0fb
+      internalID: -887090989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_40
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 81
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e626b32e15ac2d479ae351651c12e4a
+      internalID: 134037678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head_export_shoot_export_41
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 81
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b641f556799314aa35c0b902a0a753
+      internalID: 1675104909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +1001,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      head_export_shoot_export_0: 1844613574
+      head_export_shoot_export_1: 1387487243
+      head_export_shoot_export_10: 1985574645
+      head_export_shoot_export_11: 1298709154
+      head_export_shoot_export_12: -1542661635
+      head_export_shoot_export_13: -317029674
+      head_export_shoot_export_14: 1473899115
+      head_export_shoot_export_15: 919706571
+      head_export_shoot_export_16: 1376200899
+      head_export_shoot_export_17: 2113940994
+      head_export_shoot_export_18: -174008048
+      head_export_shoot_export_19: 1175699691
+      head_export_shoot_export_2: -1737161960
+      head_export_shoot_export_20: 2108949968
+      head_export_shoot_export_21: -383371705
+      head_export_shoot_export_22: -1146758141
+      head_export_shoot_export_23: -680956541
+      head_export_shoot_export_24: 1938813437
+      head_export_shoot_export_25: 360879899
+      head_export_shoot_export_26: 1862757107
+      head_export_shoot_export_27: -1619246553
+      head_export_shoot_export_28: -850319158
+      head_export_shoot_export_29: 1379570590
+      head_export_shoot_export_3: 1606322778
+      head_export_shoot_export_30: -220839527
+      head_export_shoot_export_31: 1123704197
+      head_export_shoot_export_32: -604009334
+      head_export_shoot_export_33: 407506172
+      head_export_shoot_export_34: -370223570
+      head_export_shoot_export_35: 323073041
+      head_export_shoot_export_36: -1950325560
+      head_export_shoot_export_37: -1714950356
+      head_export_shoot_export_38: -2097115851
+      head_export_shoot_export_39: -887090989
+      head_export_shoot_export_4: 1582878857
+      head_export_shoot_export_40: 134037678
+      head_export_shoot_export_41: 1675104909
+      head_export_shoot_export_5: -1663090301
+      head_export_shoot_export_6: 1391369998
+      head_export_shoot_export_7: 334818811
+      head_export_shoot_export_8: 1455546372
+      head_export_shoot_export_9: -1492053039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

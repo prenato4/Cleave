@@ -51,6 +51,12 @@ public class Machado : MonoBehaviour
             {
                 coelho.Damage(attackDamage); // Aplica o dano ao inimigo
             }
+            
+            Fungo fungo = other.GetComponent<Fungo>();
+            if (fungo != null)
+            {
+                fungo.Damage(attackDamage); // Aplica o dano ao inimigo
+            }
         }
     }
 }

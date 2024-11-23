@@ -64,7 +64,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.3756202, y: 0.14315458}
@@ -292,7 +292,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1967465280, guid: 7a8df06bd67f98142a316070f63367a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -423,8 +423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a434b05b879e01c49ad8f58b0dab9cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 8
+  speed: 7
+  jumpForce: 9
   maxJumps: 1
   attackObject: {fileID: 4470731245440493097}
   attackDuration: 0.5
@@ -469,8 +469,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06916707, y: -0.12820864}
-  m_Size: {x: 0.09547343, y: 0.13554583}
+  m_Offset: {x: -0.072495654, y: -0.16482063}
+  m_Size: {x: 0.041480117, y: 0.05196695}
   m_Direction: 0
 --- !u!95 &9156723332032205257
 Animator:

@@ -94,6 +94,19 @@ public class Player : MonoBehaviour
         
         
     }
+    
+    
+    public void Curar(float quantidade)
+    {
+        // Cura o jogador, mas não ultrapassa a vida máxima
+        health = (int)Mathf.Min(health + quantidade, maxhealth);
+
+        // Chama o evento para notificar a mudança de vida
+        currentLife = health; // Atualiza a vida atual
+        NotifyLifeChanged(); // Notifica sobre a mudança na vida
+
+        // Você pode adicionar animações ou efeitos sonoros aqui, se necessário
+    }
 
     void HandleInput()
     {
@@ -260,7 +273,7 @@ public class Player : MonoBehaviour
         NotifyLifeChanged(); // Notifica sobre a mudança na vida
     }
     
-    public void DisableControls()
+    public void DisableControls() 
     {
         controlsEnabled = false;
         rb.velocity = Vector2.zero; // Para o movimento imediatamente
@@ -291,7 +304,7 @@ public class Player : MonoBehaviour
     void Die()
     {
         // Ação a ser realizada quando o jogador morrer
-        Debug.Log("Player morreu!");
+        //Debug.Log("Player morreu!");
         anim.SetInteger("Transition", 16);
     }
 
@@ -332,21 +345,20 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Verifica se o jogador colidiu com o chão
-        if (collision.gameObject.layer == 6) // Checa se a colisão foi com o chão
+        if (collision.gameObject.layer == 7)
+        {
+            Die();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    { // Verifica se o jogador colidiu com o chão
+        if (other.gameObject.layer == 6) // Checa se a colisão foi com o chão
         {
             //anim.SetInteger("Transition", 1); // Define a animação para idle
             Jumping = false;
             jumpsRemaining = maxJumps; // Reinicia o número de pulos restantes ao tocar no chão
         }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Verifica se o jogador colidiu com um objeto de camada 7
-        if (other.gameObject.layer == 7)
-        {
-            GameManager.Instance.prnivel(); // Chama a função prnivel() do GameManager
-        }
+        
     }
 }
