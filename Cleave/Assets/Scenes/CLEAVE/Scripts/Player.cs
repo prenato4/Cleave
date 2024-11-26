@@ -77,6 +77,7 @@ public class Player : MonoBehaviour
         Move(); // Move o jogador
         Jump(); // Faz o jogador pular
         HandleDash(); // Lida com o dash
+        anim.SetFloat("YSpeed", rb.velocity.y);
         
         if (health <= 0)
         {
