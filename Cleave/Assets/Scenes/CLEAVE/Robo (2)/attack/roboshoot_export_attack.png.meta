@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: roboshoot_export_attack_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 580
+        width: 108
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eebba02cf0c0624fb14f3085df9f8d1
+      internalID: 905860251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 581
+        width: 111
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e8e22e5d84edc469fbfd039b3ecdc0
+      internalID: 1306976343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 581
+        width: 111
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0b6d59d4f64b7438785fe53aea3c37
+      internalID: 1525863427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_3
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 582
+        width: 112
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6242bc96cdbad17438aea7b8d5e9a654
+      internalID: -1756192856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 335
+        width: 115
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb2deff2428ff64ebf6ce7cdaf30182
+      internalID: -1352479428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 335
+        width: 115
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5976293df1ce2494ca82fac8520a33cb
+      internalID: -1218457737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_6
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 337
+        width: 129
+        height: 151
+      alignment: 9
+      pivot: {x: 0.55909526, y: 0.33018485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1c56fb37f14244194707a637cceb12
+      internalID: 480724700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_7
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 336
+        width: 128
+        height: 147
+      alignment: 9
+      pivot: {x: 0.554142, y: 0.3444218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5120e5252fece746a3b243854160111
+      internalID: -1519502516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 88
+        width: 125
+        height: 135
+      alignment: 9
+      pivot: {x: 0.57207495, y: 0.3973289}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fe5ec0653109742a451e383e719fbb
+      internalID: 277342290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 90
+        width: 125
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5665303, y: 0.38621908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ed4e2db30967340b6d489a06008b18
+      internalID: -1294760334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_10
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 89
+        width: 123
+        height: 124
+      alignment: 9
+      pivot: {x: 0.57324666, y: 0.42734367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e01f960f48b4a42a3a932dc0202d6a
+      internalID: 2008171926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboshoot_export_attack_11
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 89
+        width: 119
+        height: 121
+      alignment: 9
+      pivot: {x: 0.5698847, y: 0.43127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55808cb1b6435064186ea4e7d9379d3b
+      internalID: -322799030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +371,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      roboshoot_export_attack_0: 905860251
+      roboshoot_export_attack_1: 1306976343
+      roboshoot_export_attack_10: 2008171926
+      roboshoot_export_attack_11: -322799030
+      roboshoot_export_attack_2: 1525863427
+      roboshoot_export_attack_3: -1756192856
+      roboshoot_export_attack_4: -1352479428
+      roboshoot_export_attack_5: -1218457737
+      roboshoot_export_attack_6: 480724700
+      roboshoot_export_attack_7: -1519502516
+      roboshoot_export_attack_8: 277342290
+      roboshoot_export_attack_9: -1294760334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

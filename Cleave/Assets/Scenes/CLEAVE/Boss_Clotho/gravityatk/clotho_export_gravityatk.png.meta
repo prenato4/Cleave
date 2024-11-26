@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 608
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219827ed745a5b14e98596da7226f59a
+      internalID: 1272155212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 624
+        width: 143
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedaa9c147ce26b42affc942c761686b
+      internalID: -1767105532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 626
+        width: 114
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86771486c5b75244b9f16ce36f6b5fcf
+      internalID: -1275317915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 621
+        width: 159
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0846db6776f8bad42bc135bebbfe8b08
+      internalID: -2069205810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_4
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 621
+        width: 158
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d6b0dca21a9c54698b201d0f70d788
+      internalID: -30633026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_5
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 623
+        width: 150
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777cf493cc51af2409c40b44f61a595b
+      internalID: -107321632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 472
+        width: 152
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9127e0560544c2a4e9af9d78497ca080
+      internalID: 1561812311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 472
+        width: 155
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6118b1d567f22f44583e58bd596412f1
+      internalID: -58011268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 472
+        width: 153
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f265f2f8d5d6f694cb25bfeceb035e29
+      internalID: 1164514284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_9
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 472
+        width: 153
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedaff4aa16d58e4492386a36b0c6ac6
+      internalID: -2050078422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_10
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 472
+        width: 153
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63a121318483c9438ae32c099075d5f
+      internalID: 1620353675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_11
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 472
+        width: 153
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82975c9b7c56bb3428c5e45b1d28adb9
+      internalID: -996016676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 322
+        width: 153
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a671aa131bfd3124c964fafd135a619e
+      internalID: -1386380514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_13
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 321
+        width: 157
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ca569b6c6d8014b898ccb757f2d7ac
+      internalID: -1236219974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_14
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 320
+        width: 160
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533c71ea9699f0f478cea82cdb0703f9
+      internalID: 1009979342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 320
+        width: 162
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10848d13092d34d4da5c8d5d5886483c
+      internalID: -2138197823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_16
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 319
+        width: 162
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f25f0bb200602b4696889ad0fbe7ed3
+      internalID: 1919208104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_17
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 318
+        width: 161
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2351c000c293e9c479e9310b02fb5078
+      internalID: -1383922939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 167
+        width: 160
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c870601d7d141404d9aba9f29637eaee
+      internalID: -429248701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_20
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 166
+        width: 156
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6220cb7c3e5fd914dbd079c8c1f305e3
+      internalID: 1651605144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_22
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 166
+        width: 154
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a1b1c5b2206134cb3d9186399d8494
+      internalID: 1757514569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_24
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 165
+        width: 147
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609328d7de3d3004da4bb180806f28cf
+      internalID: -451893398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_26
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 164
+        width: 142
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190ce1e35e430604a8802aafb736cb67
+      internalID: -770880943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_27
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 163
+        width: 134
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c9b81a8d063cc4d84f9d792bec32f0
+      internalID: 819602726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 13
+        width: 125
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ebbe78ce9eb25459fc8d11e6b351eb
+      internalID: -112634303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_29
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 12
+        width: 117
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea511650bde29684a8f35d5600d5a096
+      internalID: 1772824263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_30
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 11
+        width: 108
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c41e224457f204aa937f461d065674
+      internalID: 2095586553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_31
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 10
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5c149ed583d3540afdcf5db1c2d6e0
+      internalID: 1876718711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_32
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 10
+        width: 86
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cc806efd6f33d4db4eea96f387afbe
+      internalID: -660986144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_gravityatk_33
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 9
+        width: 75
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdb4eb2e0bc92742b02733f182ce192
+      internalID: 787464598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +749,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clotho_export_gravityatk_0: 1272155212
+      clotho_export_gravityatk_1: -1767105532
+      clotho_export_gravityatk_10: 1620353675
+      clotho_export_gravityatk_11: -996016676
+      clotho_export_gravityatk_12: -1386380514
+      clotho_export_gravityatk_13: -1236219974
+      clotho_export_gravityatk_14: 1009979342
+      clotho_export_gravityatk_15: -2138197823
+      clotho_export_gravityatk_16: 1919208104
+      clotho_export_gravityatk_17: -1383922939
+      clotho_export_gravityatk_18: -429248701
+      clotho_export_gravityatk_19: 398135712
+      clotho_export_gravityatk_2: -1275317915
+      clotho_export_gravityatk_20: 1651605144
+      clotho_export_gravityatk_21: -1645760375
+      clotho_export_gravityatk_22: 1757514569
+      clotho_export_gravityatk_23: -1262928149
+      clotho_export_gravityatk_24: -451893398
+      clotho_export_gravityatk_25: 631293731
+      clotho_export_gravityatk_26: -770880943
+      clotho_export_gravityatk_27: 819602726
+      clotho_export_gravityatk_28: -112634303
+      clotho_export_gravityatk_29: 1772824263
+      clotho_export_gravityatk_3: -2069205810
+      clotho_export_gravityatk_30: 2095586553
+      clotho_export_gravityatk_31: 1876718711
+      clotho_export_gravityatk_32: -660986144
+      clotho_export_gravityatk_33: 787464598
+      clotho_export_gravityatk_4: -30633026
+      clotho_export_gravityatk_5: -107321632
+      clotho_export_gravityatk_6: 1561812311
+      clotho_export_gravityatk_7: -58011268
+      clotho_export_gravityatk_8: 1164514284
+      clotho_export_gravityatk_9: -2050078422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

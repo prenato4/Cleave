@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5576231933985718727}
   - component: {fileID: 8295512412690270117}
   - component: {fileID: 2850163618122898234}
+  - component: {fileID: 1625920963776631214}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -146,9 +147,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03555408, y: -0.015237689}
   serializedVersion: 2
-  m_Radius: 0.46
+  m_Radius: 0.32794157
 --- !u!114 &2850163618122898234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,4 +162,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a30443776ad400429e0bfcfb2150248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoAntesExplosao: 5
+  tempoAntesExplosao: 3
+  raioExplosao: 3
+  dano: 5
+  camadaDano:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!95 &1625920963776631214
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8993545449859762524}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1bcf97b0bbdb43f4798b8e69b1dd26d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

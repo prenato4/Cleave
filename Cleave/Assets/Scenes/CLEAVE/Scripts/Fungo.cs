@@ -37,7 +37,8 @@ public class Fungo : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
         _isAlive = true;
 
-        if (shouldFlip) _originalLocalScaleX = transform.localScale.x;
+        // Salva o valor absoluto da escala inicial no eixo X
+        _originalLocalScaleX = Mathf.Abs(transform.localScale.x);
 
         if (useTransform)
         {
@@ -47,11 +48,13 @@ public class Fungo : MonoBehaviour
         {
             _moveTarget = movePosition;
         }
-        
+
         _initialPosition = transform.position;
         _currentMoveDirection = (_initialPosition + _moveTarget - (Vector2)transform.position).normalized;
         _currentEnergy = maxEnergy;
-        _player = GameObject.FindGameObjectWithTag("Player").transform; // Assumindo que o player tem a tag "Player"
+
+        // Localiza o player na cena
+        _player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
@@ -59,14 +62,33 @@ public class Fungo : MonoBehaviour
         if (!_isAlive) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
-        
+
         if (distanceToPlayer <= attackRange)
         {
+            FacePlayer(); // Faz o fungo olhar para o player
             AttackPlayer();
         }
         else
         {
             MovePlatform();
+        }
+    }
+    
+    private void FacePlayer()
+    {
+        if (_player == null) return;
+
+        // Determina a direção do player
+        float direction = _player.position.x - transform.position.x;
+
+        // Ajusta a escala do fungo para encarar o player
+        if (direction < 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(_originalLocalScaleX), transform.localScale.y, transform.localScale.z);
+        }
+        else if (direction > 0)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(_originalLocalScaleX), transform.localScale.y, transform.localScale.z);
         }
     }
 

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clotho_export_walk_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 608
+        width: 81
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506e23f8070fb68458a2ab384687d8c3
+      internalID: 143236604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 609
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7491ed165c160459b52136893a91e5
+      internalID: 358262622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 608
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c4fbce03ba1f343a3d36d3512d73df
+      internalID: 916457857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 608
+        width: 79
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702a1eff5cb265f47a8c663a91f188c8
+      internalID: -1709611212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_4
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 608
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cebd40ce6b5ed4f868f2f82972b91b
+      internalID: 1024634326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 458
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ecb63cba4eced43a4379fa24852fde
+      internalID: -747675605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 458
+        width: 79
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071e8e1f427751545b540c241dadff76
+      internalID: -434298836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 458
+        width: 79
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c679ebf89236f8449a237580c3df33ce
+      internalID: 515422500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 459
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121aa43661406b241992180ab11936ed
+      internalID: 622915085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_9
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 459
+        width: 82
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93af2c366d64b8488d4f1530367caf6
+      internalID: 1713282233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 308
+        width: 84
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cf651899610e340b5e349e703fa013
+      internalID: -2026456322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 309
+        width: 85
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41a27975ee6bcb42a8a8e32c02a80ec
+      internalID: 1536721559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_12
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 311
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdd9226b2f01894998b3421eec90cdc
+      internalID: 1950199867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_13
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 310
+        width: 86
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8b34f267560eb4d9e5d88fe834f5a2
+      internalID: 139434988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_14
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 309
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de16f6134e8fbd44fa4425f0c58deea4
+      internalID: 92978738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_15
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 159
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5632b139b70e6ef4c9d66be5295b7ce2
+      internalID: -1685072476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_16
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 159
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d82c357e1a9f4649a86c43838783dec
+      internalID: 425045264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_17
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 158
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdff7de30525944ea1442ab3377bbf7
+      internalID: -1286756517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_18
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 158
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b00e7ce8f2b5e34296edc424f026d8c
+      internalID: 1484232274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_19
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 158
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b76d4c04660874aad4e7ececceddf7
+      internalID: 120321771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 9
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b6fe3c3fb884c47bf3ff7252f8a4b3
+      internalID: -1628763514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_21
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 9
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d82bc465a5e5004da6decd3da7ccb43
+      internalID: -132593788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_22
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 9
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069144d3a63314046a0abbeebdc5e824
+      internalID: 788982415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_walk_23
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 9
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2074cc8774b8b2d4da54e98193ece129
+      internalID: -197478467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +623,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clotho_export_walk_0: 143236604
+      clotho_export_walk_1: 358262622
+      clotho_export_walk_10: -2026456322
+      clotho_export_walk_11: 1536721559
+      clotho_export_walk_12: 1950199867
+      clotho_export_walk_13: 139434988
+      clotho_export_walk_14: 92978738
+      clotho_export_walk_15: -1685072476
+      clotho_export_walk_16: 425045264
+      clotho_export_walk_17: -1286756517
+      clotho_export_walk_18: 1484232274
+      clotho_export_walk_19: 120321771
+      clotho_export_walk_2: 916457857
+      clotho_export_walk_20: -1628763514
+      clotho_export_walk_21: -132593788
+      clotho_export_walk_22: 788982415
+      clotho_export_walk_23: -197478467
+      clotho_export_walk_3: -1709611212
+      clotho_export_walk_4: 1024634326
+      clotho_export_walk_5: -747675605
+      clotho_export_walk_6: -434298836
+      clotho_export_walk_7: 515422500
+      clotho_export_walk_8: 622915085
+      clotho_export_walk_9: 1713282233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

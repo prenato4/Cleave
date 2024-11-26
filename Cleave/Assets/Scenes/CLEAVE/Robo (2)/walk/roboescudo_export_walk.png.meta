@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,763 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: roboescudo_export_walk_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 905
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cd2f8dc8c75f54da7729ebec946e3e
+      internalID: -1011938119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_1
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 904
+        width: 109
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8fc91c728490c409aab561c3988a7f
+      internalID: -547640378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 904
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5c3352add6e0248bab0a23dc6e901d
+      internalID: -1103089357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_3
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 903
+        width: 104
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912eeadd4ad403f439d91d52f367d5e0
+      internalID: -547269159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 902
+        width: 105
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c98195e7639864999a0293a43e5b51
+      internalID: 700411720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 901
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86285ca48897f624fb80c833d04da3f3
+      internalID: 580487166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 730
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a026376fa8dbb6c49882f3c40f8a13c0
+      internalID: 1203452957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_7
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 730
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5479f5a7503714fb91ad627ecdc58e
+      internalID: 1983090051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_8
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 731
+        width: 103
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2c8de307d61db45b9f4224c6ef1eb0
+      internalID: 1893250141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_9
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 731
+        width: 102
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a225b23dad682498b5a60f8d1bb2a3
+      internalID: 1990291290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_10
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 731
+        width: 102
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47baaf208bc440c4da847fca9b432632
+      internalID: 786434356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_11
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 732
+        width: 102
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3718b875f611d4586c27c9dae16d7c
+      internalID: -888781696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 561
+        width: 102
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ec61bdbd9bdce4d907bd75547b6c83
+      internalID: -88459257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 561
+        width: 102
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615f538cb7be344d8d837facfb47c45
+      internalID: -648245089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_14
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 560
+        width: 102
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a16ece460f00a4ba80555d54464864
+      internalID: -819530240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_15
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 560
+        width: 103
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626f6d7a448b2474588d7624a56e2bab
+      internalID: 280357153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_16
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 561
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe839ba6c309c5444a97f9818b1df9d0
+      internalID: -1717746701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_17
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 563
+        width: 104
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcd0e4c4b639df42a750d1e495fb7c1
+      internalID: 794939591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 393
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f564de05b73df724fadba05a96af4c8d
+      internalID: -322582126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 392
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c596903d090e0fc4a8a4a07d1328462f
+      internalID: -1704867841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_20
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 391
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c35b4284b16f73498b6910bcf0a892e
+      internalID: 401462874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_21
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 390
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f97cbcb3d3a2a649b31e3aa2b6506e1
+      internalID: -1065196975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_22
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 389
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeacf4dd28bd6b64b846ec1d15a6f15c
+      internalID: 1225920190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_23
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 389
+        width: 104
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebab311dccac8f40bdf92d2f370b0e1
+      internalID: 243152348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_24
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 217
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63951746b79af174297f980cfda7f45f
+      internalID: -1355900760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 217
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ec6f05adb2de741bba4296ad18d2a5
+      internalID: 1827506912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_26
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 217
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81ad55f6a584ef4d8f4487a2bba778b
+      internalID: -35330166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_27
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 217
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09a2a30c92982f498c99570cc91ae82
+      internalID: -1253997383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_28
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 217
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7f48d05281d454ab3857303336f6f0
+      internalID: 958789653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_29
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 217
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256cfbe7e0cdb164eb3cbcb4620171cd
+      internalID: 596270916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 46
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337fc93040c407d44a4569916fedd21a
+      internalID: -1477069631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_31
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 46
+        width: 105
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac873149e86cf44d896a1de81bba709
+      internalID: -1192823645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_32
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 47
+        width: 105
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d407a6902e8cc41aa147cdbd09dc4f
+      internalID: 451353917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_33
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 47
+        width: 105
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd3332d43abc5947a3066bae64cfb08
+      internalID: 778635539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_34
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 48
+        width: 105
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4410650c3b9703842bbae181edb43a66
+      internalID: -1073569717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboescudo_export_walk_35
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 49
+        width: 109
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e85d96759dcc241914c762774a3820
+      internalID: -1638520079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +875,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      roboescudo_export_walk_0: -1011938119
+      roboescudo_export_walk_1: -547640378
+      roboescudo_export_walk_10: 786434356
+      roboescudo_export_walk_11: -888781696
+      roboescudo_export_walk_12: -88459257
+      roboescudo_export_walk_13: -648245089
+      roboescudo_export_walk_14: -819530240
+      roboescudo_export_walk_15: 280357153
+      roboescudo_export_walk_16: -1717746701
+      roboescudo_export_walk_17: 794939591
+      roboescudo_export_walk_18: -322582126
+      roboescudo_export_walk_19: -1704867841
+      roboescudo_export_walk_2: -1103089357
+      roboescudo_export_walk_20: 401462874
+      roboescudo_export_walk_21: -1065196975
+      roboescudo_export_walk_22: 1225920190
+      roboescudo_export_walk_23: 243152348
+      roboescudo_export_walk_24: -1355900760
+      roboescudo_export_walk_25: 1827506912
+      roboescudo_export_walk_26: -35330166
+      roboescudo_export_walk_27: -1253997383
+      roboescudo_export_walk_28: 958789653
+      roboescudo_export_walk_29: 596270916
+      roboescudo_export_walk_3: -547269159
+      roboescudo_export_walk_30: -1477069631
+      roboescudo_export_walk_31: -1192823645
+      roboescudo_export_walk_32: 451353917
+      roboescudo_export_walk_33: 778635539
+      roboescudo_export_walk_34: -1073569717
+      roboescudo_export_walk_35: -1638520079
+      roboescudo_export_walk_4: 700411720
+      roboescudo_export_walk_5: 580487166
+      roboescudo_export_walk_6: 1203452957
+      roboescudo_export_walk_7: 1983090051
+      roboescudo_export_walk_8: 1893250141
+      roboescudo_export_walk_9: 1990291290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

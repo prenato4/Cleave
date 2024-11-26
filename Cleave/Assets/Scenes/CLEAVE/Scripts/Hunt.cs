@@ -6,59 +6,62 @@ using Random = UnityEngine.Random;
 public class Hunt : MonoBehaviour
 {
     public GameObject arrowPrefab;  // Prefab da flecha
-    public GameObject trapPrefab;     // Prefab da armadilha
-    public Transform firePoint;     // Ponto de onde a flecha será disparada
+    public GameObject trapPrefab;  // Prefab da armadilha
+    public Transform firePoint;    // Ponto de onde a flecha será disparada
     public float fireInterval = 10f; // Intervalo de tempo entre disparos
     public float animationResetDelay = 1f; // Tempo após o disparo para voltar à animação padrão
     public float trapMinDistance = 2f; // Distância mínima onde a armadilha pode ser colocada
     public float trapMaxDistance = 5f; // Distância máxima onde a armadilha pode ser colocada
-    
+    public float attackRange = 5f; // Distância mínima para atacar o player
+    public float moveSpeed = 2f;   // Velocidade de movimento do boss
+
     public int maxHealth = 100;  // Vida máxima do boss
-    public int currentHealth;   // Vida atual do boss
-    
+    public int currentHealth;    // Vida atual do boss
+
     public float spawnInterval = 15f;
 
     private bool facingRight = true; // Define se o boss está virado para a direita
-    
     private Animator anim;
     private Transform player;
-    private bool Fire;
+    private bool isFiring;
 
     void Start()
     {
-        
         currentHealth = maxHealth;
-        
         anim = GetComponent<Animator>();
+
         // Encontrar o player na cena
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         // Iniciar a rotina de disparo
         StartCoroutine(FireArrow());
-        
-        // Iniciar a rotina de disparo
+
+        // Iniciar a rotina de armadilhas
         StartCoroutine(spawnTrapp());
     }
 
     private void Update()
     {
-        if (!Fire)
+        if (!isFiring)
         {
-            anim.SetInteger("Transition", 1);
+            anim.SetInteger("Transition", 1); // Idle
         }
 
         // Atualiza a direção para onde o boss está olhando com base na posição do player
         FlipTowardsPlayer();
+
+        // Movimenta o boss até estar dentro do alcance para atacar
+        MoveTowardsPlayerIfNeeded();
     }
 
     void FlipTowardsPlayer()
     {
-        // Verifica se o player está à direita ou à esquerda
-        if (player.position.x > transform.position.x && facingRight)
+        // Verifica se o player está à direita ou à esquerda e ajusta o boss se necessário
+        if (player.position.x > transform.position.x && !facingRight)
         {
             Flip();
         }
-        else if (player.position.x < transform.position.x && !facingRight)
+        else if (player.position.x < transform.position.x && facingRight)
         {
             Flip();
         }
@@ -66,116 +69,119 @@ public class Hunt : MonoBehaviour
 
     void Flip()
     {
-        // Inverte a direção do boss
+        // Inverte o estado de `facingRight`
         facingRight = !facingRight;
 
-        // Multiplica o scale do transform para inverter visualmente o sprite
+        // Altera o eixo X do `localScale` para inverter o sprite
         Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
+        localScale.x = Mathf.Abs(localScale.x) * (facingRight ? -1 : 1); // Define positivo para direita, negativo para esquerda
         transform.localScale = localScale;
+    }
+
+    void MoveTowardsPlayerIfNeeded()
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // Se estiver fora do alcance de ataque, move-se em direção ao player
+        if (distanceToPlayer > attackRange)
+        {
+            anim.SetInteger("Transition", 3); // Animação de andar
+            Vector2 direction = (player.position - transform.position).normalized;
+            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetInteger("Transition", 1); // Idle ao chegar no range
+        }
     }
 
     IEnumerator FireArrow()
     {
         while (true)
         {
-            // Espera 10 segundos
+            // Espera o intervalo de disparo
             yield return new WaitForSeconds(fireInterval);
 
-            // Disparar flecha na direção do player
-            ShootAtPlayer();
-            
+            // Verifica a distância antes de disparar
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+            if (distanceToPlayer <= attackRange)
+            {
+                ShootAtPlayer();
+            }
         }
     }
-    
+
     IEnumerator spawnTrapp()
     {
         while (true)
         {
-            // Espera 10 segundos
+            // Espera o intervalo de spawn
             yield return new WaitForSeconds(spawnInterval);
-
-           StartCoroutine(SpawnTrap());
-            
+            StartCoroutine(SpawnTrap());
         }
     }
-    
-     public void Damage(int damage)
-        {
-            currentHealth -= damage;  // Reduz a vida
-    
-            // Verifica se o boss ainda tem vida
-            if (currentHealth > 0)
-            {
-                anim.SetTrigger("hit");
-                // Se quiser adicionar uma animação de hit, faça isso aqui
-                Debug.Log("Boss recebeu dano! Vida atual: " + currentHealth);
-            }
-            else
-            {
-                // Se a vida chegar a zero, chama o método para morte
-                Die();
-            }
-        }
 
-    void ShootAtPlayer()
+    public void Damage(int damage)
     {
-        Fire = true;
-        // Troca para a animação de ataque
-        anim.SetInteger("Transition", 2);
+        currentHealth -= damage;  // Reduz a vida
 
-        // Cria uma flecha no ponto de disparo e define sua direção
-        GameObject bullet = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation); // Instancia a flecha
-
-        SA bulletScript = bullet.GetComponent<SA>(); // Obtém o script da flecha
-
-        // Define a direção da flecha dependendo de para onde o boss está virado
-        if (facingRight)
+        if (currentHealth > 0)
         {
-            bulletScript.SetDirection(Vector2.left); // Atira para a direita
+            anim.SetTrigger("hit");
+            Debug.Log("Boss recebeu dano! Vida atual: " + currentHealth);
         }
         else
         {
-            bulletScript.SetDirection(Vector2.right); // Atira para a esquerda
+            Die();
         }
+    }
 
-        // Retornar à animação padrão após um pequeno delay
+    void ShootAtPlayer()
+    {
+        isFiring = true;
+
+        // Troca para a animação de ataque
+        anim.SetInteger("Transition", 2);
+
+        // Cria uma flecha no ponto de disparo
+        GameObject bullet = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+
+        SA bulletScript = bullet.GetComponent<SA>();
+
+        // Define a direção da flecha
+        Vector2 direction = facingRight ? Vector2.right : Vector2.left;
+        bulletScript.SetDirection(direction);
+
+        // Retorna à animação padrão após um pequeno delay
         StartCoroutine(ResetToDefaultAnimation());
     }
-    
+
     private IEnumerator SpawnTrap()
     {
         yield return new WaitForSeconds(10f);
-        anim.SetInteger("Transition", 8);
+        anim.SetTrigger("sp");
+
         // Gera uma distância aleatória dentro do intervalo definido
         float randomDistance = Random.Range(trapMinDistance, trapMaxDistance);
 
-        // Calcula a posição da armadilha com base na direção do boss
-        Vector2 spawnDirection = facingRight ? Vector2.left : Vector2.right;
+        // Calcula a posição da armadilha
+        Vector2 spawnDirection = facingRight ? Vector2.right : Vector2.left;
         Vector2 spawnPosition = (Vector2)transform.position + spawnDirection * randomDistance;
 
         // Cria a armadilha na posição calculada
         Instantiate(trapPrefab, spawnPosition, Quaternion.identity);
-
-        
     }
-    
-    
 
     IEnumerator ResetToDefaultAnimation()
     {
-        // Espera um tempo para a animação de ataque terminar
         yield return new WaitForSeconds(animationResetDelay);
-
-        // Retorna para a animação padrão (idle, por exemplo)
-        anim.SetInteger("Transition", 1);  // Aqui, 1 seria a animação padrão de idle
+        anim.SetInteger("Transition", 1); // Idle
+        isFiring = false;
     }
-    
-     void Die()
-        {
-            anim.SetTrigger("death");
-    
-            // Desativa ou destrói o boss após a morte
-             Destroy(gameObject, 0.5f); // Se quiser destruir o objeto
-        }
+
+    void Die()
+    {
+        anim.SetTrigger("death");
+        Destroy(gameObject, 0.5f);
+    }
 }

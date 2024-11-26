@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     {
         if (soulText != null)
         {
-            soulText.text = "Souls: " + soulCount;
+            soulText.text = ": " + soulCount;
         }
     }
 

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clotho_export_laugh_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 461
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5ad4f68017e1d48ab835e1f7d64ee1
+      internalID: -931062746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 461
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d060e53efe8c746a1896d2b9474c76
+      internalID: -1196753266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 461
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022e5e9ce324e95468c7580da476dd60
+      internalID: 1361306570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 461
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3058f78d585c544aaa1eca5477c3a4
+      internalID: -626546339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_4
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 461
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8775b2d62783d44babfe018ba20dad
+      internalID: 1881098504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 310
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2117e4a53a60d842b9dac01c57f8d63
+      internalID: -1844044903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 310
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cb9bf288c3b4142ba1d1e6a96ad35a
+      internalID: 767512202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_7
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 310
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb79160741c3b6d4db7f26a1be264a24
+      internalID: -1961436699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_8
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 310
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c7515181b2c2e4e9ae730819b1164b
+      internalID: -257569712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_9
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 310
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2e4ed6ddc87b743945a7c725df033f
+      internalID: 1420351988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 161
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e072ea8b874d75419d2da5a24f5dab1
+      internalID: 1757204440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_11
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 161
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20734c7e20fdb345b417fcd136b044d
+      internalID: -1840708510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_12
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 161
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f19f5500f2d534a9bdab945063c891
+      internalID: -1441850246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_13
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 161
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a376213685209e44ab527ce3724dfa0
+      internalID: -1415952986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_14
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 161
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d341ed2196f20a34cadc1f7391be06ea
+      internalID: 803285749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_15
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 11
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7954b9f4ab7e6694a9af5cd28b6f790b
+      internalID: -1647981917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_16
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 11
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42817a625839fa1439a5e90c8b0fce32
+      internalID: -1475511282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_laugh_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 11
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8004c904f81446f4298d61fa174d43de
+      internalID: -2029705884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +497,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clotho_export_laugh_0: -931062746
+      clotho_export_laugh_1: -1196753266
+      clotho_export_laugh_10: 1757204440
+      clotho_export_laugh_11: -1840708510
+      clotho_export_laugh_12: -1441850246
+      clotho_export_laugh_13: -1415952986
+      clotho_export_laugh_14: 803285749
+      clotho_export_laugh_15: -1647981917
+      clotho_export_laugh_16: -1475511282
+      clotho_export_laugh_17: -2029705884
+      clotho_export_laugh_2: 1361306570
+      clotho_export_laugh_3: -626546339
+      clotho_export_laugh_4: 1881098504
+      clotho_export_laugh_5: -1844044903
+      clotho_export_laugh_6: 767512202
+      clotho_export_laugh_7: -1961436699
+      clotho_export_laugh_8: -257569712
+      clotho_export_laugh_9: 1420351988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

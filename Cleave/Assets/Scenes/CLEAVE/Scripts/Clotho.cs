@@ -1,198 +1,185 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class Clotho : MonoBehaviour
 {
-    public int vidaMaxima = 100; // Vida máxima do boss
-    public int vidaAtual; // Vida atual do boss
-    public bool escudoAtivo = false; // Estado do escudo
+    public Transform player; // Referência ao player
+    public GameObject projectilePrefab; // Prefab do projétil
+    public Transform firePoint; // Ponto de disparo do projétil
+    public float moveSpeed = 2f; // Velocidade de movimento do boss
+    public float stopRange = 2f; // Distância mínima para o boss parar de se mover
+    public float attackCooldown = 10f; // Tempo entre os ataques
+    public float attackStartDelay = 10f; // Delay antes de iniciar o ataque
+    public GameObject shield; // Referência ao escudo de Clotho
 
-    public float tempoEscudo = 5f; // Tempo que o escudo fica ativo
-    public float intervaloEscudo = 10f; // Intervalo de tempo entre ativação do escudo
+    private Animator animator; // Referência ao componente Animator
+    private bool canAttack = true; // Controle de cooldown para ataque
+    private bool isShieldActive = false; // Estado de ativação do escudo
+    private bool isInvulnerable = false; // Controla a invulnerabilidade de Clotho
 
-    private float tempoRestanteEscudo;
-    private Animator an;
-
-    public GameObject prefabAtaque; // Prefab do projétil a ser disparado
-    public Transform pontoDisparo; // Ponto de onde o projétil será disparado
-    public float intervaloDisparo = 3f; // Intervalo entre disparos
-
-    private float tempoRestanteDisparo;
-
-    public Transform Player; // Referência ao Transform do player
-    public float gravidadeAlterada = 2f; // Gravidade alterada pelo boss
-    public float velocidadeAlterada = 2f; // Velocidade alterada pelo boss
-    public float tempoAlteracao = 5f; // Tempo de duração das alterações
-    private float tempoRestanteAlteracao;
-    private bool atacando = false;
+    public int maxHealth = 100; // Vida máxima de Clotho
+    public int currentHealth; // Vida atual de Clotho
 
     void Start()
     {
-        an = GetComponent<Animator>();
-        vidaAtual = vidaMaxima;
-        tempoRestanteEscudo = intervaloEscudo;
-        tempoRestanteDisparo = intervaloDisparo;
+        // Inicializa a vida de Clotho
+        currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
+        StartCoroutine(StartWithDelays());
+        StartCoroutine(ActivateShieldPeriodically()); // Inicia a ativação do escudo a cada 15 segundos
+    }
 
-        StartCoroutine(AlterarGravidadeEVelocidadePeriodicamente());
-        StartCoroutine(VerificarAtaques()); // Iniciar a rotina de ataque
+    IEnumerator StartWithDelays()
+    {
+        // Aguarda o tempo de delay antes de iniciar o ataque
+        yield return new WaitForSeconds(attackStartDelay);
 
-        // Encontra o player na cena
-        Player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        while (true)
+        {
+            if (Vector2.Distance(transform.position, player.position) <= stopRange && canAttack)
+            {
+                StartCoroutine(Attack());
+            }
+
+            // Aguarda um pequeno intervalo para verificar novamente (ajuste conforme necessário)
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    IEnumerator ActivateShieldPeriodically()
+    {
+        // Aguarda antes de ativar o escudo pela primeira vez
+        yield return new WaitForSeconds(16f); // Delay inicial antes do primeiro escudo
+
+        while (true)
+        {
+            // Ativa o escudo
+            ActivateShield();
+
+            // Aguarda o tempo que o escudo ficará ativo
+            yield return new WaitForSeconds(5f); // O escudo ficará ativo por 5 segundos
+
+            // Desativa o escudo
+            DeactivateShield();
+
+            // Aguarda 10 segundos antes de ativar novamente
+            yield return new WaitForSeconds(15f);
+        }
     }
 
     void Update()
     {
-        // Atualiza o tempo restante do escudo
-        tempoRestanteEscudo -= Time.deltaTime;
-
-        // Ativa o escudo se o tempo restante for menor ou igual a 0
-        if (tempoRestanteEscudo <= 0)
-        {
-            AtivarEscudo();
-            tempoRestanteEscudo = intervaloEscudo; // Reinicia o tempo do escudo
-        }
-
-        // Atualiza o tempo restante para o próximo disparo
-        tempoRestanteDisparo -= Time.deltaTime;
-
-        // Dispara o projétil se o tempo restante for menor ou igual a 0
-        if (tempoRestanteDisparo <= 0 && prefabAtaque != null)
-        {
-            DispararProjétil();
-            tempoRestanteDisparo = intervaloDisparo; // Reinicia o tempo de disparo
-        }
-
-        // Atualiza o tempo restante para a alteração
-        if (tempoRestanteAlteracao > 0)
-        {
-            tempoRestanteAlteracao -= Time.deltaTime;
-            if (tempoRestanteAlteracao <= 0)
-            {
-                RestaurarPlayer();
-            }
-        }
-
-        // Atualiza a vida e verifica se o boss morreu
-        if (vidaAtual <= 0)
-        {
-            Morrer();
-        }
-
-        // Atualiza a rotação para o player constantemente
-        FlipTowardsPlayer();
+        MoveTowardsPlayer();
     }
 
-    public void Damage(int dano)
+    void MoveTowardsPlayer()
     {
-        if (!escudoAtivo) // Só recebe dano se o escudo não estiver ativo
+        if (player == null) return;
+
+        // Inverte a direção do sprite para olhar para o player
+        Vector3 scale = transform.localScale;
+        scale.x = player.position.x < transform.position.x ? 1 : -1;
+        transform.localScale = scale;
+
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if (distanceToPlayer > stopRange)
         {
-            vidaAtual -= dano;
-            if (vidaAtual < 0) vidaAtual = 0; // Garante que a vida não seja negativa
+            // Move em direção ao player
+            Vector2 direction = (player.position - transform.position).normalized;
+            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+
+            // Ajusta a animação para "Andar"
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            // Para de se mover
+            animator.SetBool("isWalking", false);
         }
     }
 
-    void AtivarEscudo()
+    IEnumerator Attack()
     {
-        escudoAtivo = true;
-        an.SetInteger("Transition", 3); // Transição para o estado do escudo ativo
-        // Ativa o escudo (pode adicionar efeitos visuais ou sonoros aqui)
-        Invoke("DesativarEscudo", tempoEscudo); // Desativa o escudo após o tempo especificado
-    }
+        canAttack = false;
 
-    void DesativarEscudo()
-    {
-        escudoAtivo = false;
-        an.SetInteger("Transition", 1); // Transição para o estado idle
-        // Desativa o escudo (pode adicionar efeitos visuais ou sonoros aqui)
-    }
+        // Inicia a animação de ataque
+        animator.SetTrigger("isAttacking");
 
-    void DispararProjétil()
-    {
-        if (pontoDisparo != null && prefabAtaque != null)
+        // Aguarda o tempo suficiente para a animação de ataque ser exibida (ajuste o valor conforme necessário)
+        yield return new WaitForSeconds(0.5f);
+
+        // Instancia o projétil
+        if (firePoint != null && projectilePrefab != null)
         {
-            atacando = true;
-            an.SetInteger("Transition", 5); // Transição para o estado de ataque
-            Instantiate(prefabAtaque, pontoDisparo.position, pontoDisparo.rotation);
+            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+            tiroclotho projectileScript = projectile.GetComponent<tiroclotho>();
+
+            // Define a direção do projétil
+            Vector2 direction = transform.localScale.x > 0 ? Vector2.left : Vector2.right;
+            projectileScript.SetDirection(direction);
+        }
+
+        // Aguarda o cooldown do ataque
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+
+    void ActivateShield()
+    {
+        // Ativa o escudo e torna Clotho invulnerável
+        if (shield != null)
+        {
+            shield.SetActive(true); // Ativa o escudo
+            isInvulnerable = true; // Clotho fica invulnerável
         }
     }
 
-    IEnumerator AlterarGravidadeEVelocidadePeriodicamente()
+    void DeactivateShield()
     {
-        while (true)
+        // Desativa o escudo e permite que Clotho tome dano novamente
+        if (shield != null)
         {
-            if (Player != null)
-            {
-                // Altera a gravidade e a velocidade
-                Player.GetComponent<Player>().SetGravity(gravidadeAlterada);
-                Player.GetComponent<Player>().speed = velocidadeAlterada;
-
-                // Define o tempo restante para a alteração
-                tempoRestanteAlteracao = tempoAlteracao;
-
-                an.SetInteger("Transition", 4); // Transição para o estado de alteração
-
-                // Espera o tempo de alteração antes de restaurar
-                yield return new WaitForSeconds(tempoAlteracao);
-
-                // Restaura a gravidade e a velocidade do player
-                RestaurarPlayer();
-
-                an.SetInteger("Transition", 1); // Transição para o estado idle
-            }
-
-            // Espera 10 segundos antes da próxima alteração
-            yield return new WaitForSeconds(10f);
+            shield.SetActive(false); // Desativa o escudo
+            isInvulnerable = false; // Clotho não está mais invulnerável
         }
     }
 
-    void RestaurarPlayer()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Player != null)
+        if (isInvulnerable) return; // Ignora o dano se Clotho estiver invulnerável
+    }
+
+    // Método para aplicar dano
+    public void Damage(int damage)
+    {
+        if (isInvulnerable) return; // Ignora dano se Clotho estiver invulnerável
+
+        animator.SetTrigger("hit");
+
+        // Reduz a vida
+        currentHealth -= damage;
+
+        // Garantir que a vida não seja menor que 0
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        // Exibir a vida restante no console (pode ser substituído por uma UI de vida)
+        Debug.Log("Vida de Clotho: " + currentHealth);
+
+        // Verifica se Clotho morreu
+        if (currentHealth <= 0)
         {
-            an.SetInteger("Transition", 1); // Transição para o estado idle
-            Player.GetComponent<Player>().SetGravity(1f); // Restaura a gravidade padrão
-            Player.GetComponent<Player>().speed = 5f; // Restaura a velocidade padrão
+            Die();
         }
     }
 
-    void Morrer()
+    // Método para lidar com a morte de Clotho
+    void Die()
     {
-        // Lógica para quando o boss morrer (ex. animação de morte, drop de itens, etc.)
-        an.SetInteger("Transition", 6); // Transição para a animação de morte
-        Destroy(gameObject, 1f); // Remove o boss do jogo após um pequeno atraso para a animação
-    }
-
-    IEnumerator VerificarAtaques()
-    {
-        while (true)
-        {
-            if (atacando)
-            {
-                // Retorna à animação padrão após o ataque
-                yield return new WaitForSeconds(0.5f); // Aguarda um pouco antes de retornar ao idle
-                an.SetInteger("Transition", 1); // Retorna ao estado idle
-                atacando = false;
-            }
-
-            yield return null;
-        }
-    }
-
-    void FlipTowardsPlayer()
-    {
-        if (Player != null)
-        {
-            // Verifica a posição do player para decidir a direção de ataque
-            if (Player.position.x > transform.position.x)
-            {
-                // Player está à direita
-                transform.localScale = new Vector3(1, 1, 1); // Olhando para a direita
-            }
-            else
-            {
-                // Player está à esquerda
-                transform.localScale = new Vector3(-1, 1, 1); // Olhando para a esquerda
-            }
-        }
+        // Lógica para a morte de Clotho (exemplo: desativa o objeto ou inicia uma animação)
+        Debug.Log("Clotho morreu!");
+        animator.SetTrigger("death");
+        Destroy(gameObject, 1.5f); // Exemplo de desativar o objeto (Clotho morreu)
     }
 }

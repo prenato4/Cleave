@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: robo_export_attack_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 327
+        width: 152
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5995781, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b260e0088380ba4db0c05a0c4029179
+      internalID: 1648472965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 328
+        width: 152
+        height: 105
+      alignment: 9
+      pivot: {x: 0.6125661, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680f24f6dccd4ce49b1d6bf72e2145d6
+      internalID: 267457124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_2
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 329
+        width: 152
+        height: 105
+      alignment: 9
+      pivot: {x: 0.6601904, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cd475547b6a0b46a7f7b6be38b0843
+      internalID: 1288860747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_3
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 329
+        width: 155
+        height: 104
+      alignment: 9
+      pivot: {x: 0.6963276, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f546f039143edb438fa6b8e0ec9b3d5
+      internalID: -1334237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 183
+        width: 164
+        height: 105
+      alignment: 9
+      pivot: {x: 0.6934489, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e37de2b965f43469b86e3a79023a0b
+      internalID: -1274592365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 183
+        width: 170
+        height: 105
+      alignment: 9
+      pivot: {x: 0.70185584, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22939c7c05d23f14db1f7b4c482c7c49
+      internalID: 1966949591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_6
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 185
+        width: 178
+        height: 103
+      alignment: 9
+      pivot: {x: 0.7146082, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8b84b1645679d46b7a67ce47341894
+      internalID: 1295153572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 184
+        width: 170
+        height: 104
+      alignment: 9
+      pivot: {x: 0.70566404, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b45d17ea0ba30547a89647dcbbe2fea
+      internalID: -1306643435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 38
+        width: 163
+        height: 105
+      alignment: 9
+      pivot: {x: 0.698608, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ccc45b67175cf46baed59858d3eafe
+      internalID: -716583367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_9
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 39
+        width: 155
+        height: 104
+      alignment: 9
+      pivot: {x: 0.6921501, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec9351c7495a274aa584897a69cc46b
+      internalID: -850792508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_10
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 38
+        width: 152
+        height: 105
+      alignment: 9
+      pivot: {x: 0.66186565, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e2255e28f28d343b9fd66d5084157e
+      internalID: 1780850976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_attack_11
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 38
+        width: 152
+        height: 105
+      alignment: 9
+      pivot: {x: 0.6150103, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a386383a9ea1bb94a9dd1a8afe20c682
+      internalID: 706240238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +371,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      robo_export_attack_0: 1648472965
+      robo_export_attack_1: 267457124
+      robo_export_attack_10: 1780850976
+      robo_export_attack_11: 706240238
+      robo_export_attack_2: 1288860747
+      robo_export_attack_3: -1334237
+      robo_export_attack_4: -1274592365
+      robo_export_attack_5: 1966949591
+      robo_export_attack_6: 1295153572
+      robo_export_attack_7: -1306643435
+      robo_export_attack_8: -716583367
+      robo_export_attack_9: -850792508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

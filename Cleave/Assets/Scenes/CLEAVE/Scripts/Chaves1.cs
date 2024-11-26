@@ -19,5 +19,19 @@ public class Chaves1 : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        
+        if (collision.CompareTag("Player"))
+        {
+            // Obtém o gerenciador do puzzle
+            puzzle puzzleManager = FindObjectOfType<puzzle>();
+            if (puzzleManager != null)
+            {
+                // Incrementa o número de chaves coletadas
+                puzzleManager.keysCollected++;
+                Debug.Log("Chave coletada! Total: " + puzzleManager.keysCollected);
+                // Remove a chave da cena
+                Destroy(gameObject);
+            }
+        }
     }
 }

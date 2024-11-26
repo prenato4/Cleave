@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 458
+        width: 66
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3803260da91464a8c51532663d53c1
+      internalID: 2080838903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 476
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490f6bba407509e44bc87f1d7bb66c9b
+      internalID: 869689107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 492
+        width: 99
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d996ba0be3cc4e4ba5d12bbdb512b0f
+      internalID: -1025028167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_3
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 492
+        width: 98
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb2783165944b14c83f9bbe73c1758b
+      internalID: -1120943380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_4
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 486
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f347e9754d5c7b2428590526f6307625
+      internalID: 1720801546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 333
+        width: 92
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52413363cbec76f4c88448c6d50633d4
+      internalID: -660565140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 335
+        width: 93
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ad4287a9ee2a0418711829da713288
+      internalID: 310467274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 337
+        width: 95
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2bb009a5160b340bf360d365fc4eba
+      internalID: 2112698164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_8
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 337
+        width: 96
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d62ec33d07ed043b4de31108ce9aa5
+      internalID: -823179854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_9
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 336
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1c506e137d1d9428063cc23503b836
+      internalID: -567304950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 185
+        width: 95
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd32514555d06324e9990d5eb73ae7a6
+      internalID: -153990396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 185
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045c06d7520beee4db23ff1e8f0b02e5
+      internalID: 1273456020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_12
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 186
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49ee7e17f23bf94ea7ebee09ed69a92
+      internalID: 360086881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_13
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 186
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258781c027ba472439aa576b800abb24
+      internalID: 496775783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_14
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 186
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fa7f72cd22c3f43935e5de48909269
+      internalID: -275063238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_15
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 36
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cfa1322a2e0c8439ad1a07f9033e48
+      internalID: -1107089213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 36
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ee557681871dd4aa645859fc971788
+      internalID: 456797209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_mortefinal_17
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 36
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a79520573d04c54b8d8e62366f08f5f
+      internalID: -1252241565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +497,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clotho_export_mortefinal_0: 2080838903
+      clotho_export_mortefinal_1: 869689107
+      clotho_export_mortefinal_10: -153990396
+      clotho_export_mortefinal_11: 1273456020
+      clotho_export_mortefinal_12: 360086881
+      clotho_export_mortefinal_13: 496775783
+      clotho_export_mortefinal_14: -275063238
+      clotho_export_mortefinal_15: -1107089213
+      clotho_export_mortefinal_16: 456797209
+      clotho_export_mortefinal_17: -1252241565
+      clotho_export_mortefinal_2: -1025028167
+      clotho_export_mortefinal_3: -1120943380
+      clotho_export_mortefinal_4: 1720801546
+      clotho_export_mortefinal_5: -660565140
+      clotho_export_mortefinal_6: 310467274
+      clotho_export_mortefinal_7: 2112698164
+      clotho_export_mortefinal_8: -823179854
+      clotho_export_mortefinal_9: -567304950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

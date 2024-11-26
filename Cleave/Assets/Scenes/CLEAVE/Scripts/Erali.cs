@@ -69,7 +69,6 @@ public class Erali : MonoBehaviour
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0f)
         {
-            StartCoroutine(SpawnObjects());
             ActivateObject();
             spawnTimer = spawnDelay;  // Reinicia o temporizador para o próximo grupo
         }
@@ -115,15 +114,7 @@ public class Erali : MonoBehaviour
         }
     }
     
-    IEnumerator SpawnObjects()
-    {
-        // Instancia um grupo de objetos com intervalo de spawnInterval
-        for (int i = 0; i < 5; i++)  // Ajuste o número de instâncias conforme necessário
-        {
-            Instantiate(spawnPrefab, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(spawnInterval);
-        }
-    }
+    
     
     void ActivateObject()
     {
@@ -132,7 +123,21 @@ public class Erali : MonoBehaviour
         {
             ActivateHealingParticles();
             objectToActivate.SetActive(true);
+        
+            // Instancia as fadas no mesmo local onde o objeto é ativado
+            StartCoroutine(SpawnObjectsAtPosition(objectToActivate.transform.position));
+        
             StartCoroutine(DeactivateObjectAfterDelay(objectActiveDuration)); // Inicia a corrotina para desativar o objeto
+        }
+    }
+    
+    IEnumerator SpawnObjectsAtPosition(Vector3 position)
+    {
+        // Instancia um grupo de objetos com intervalo de spawnInterval na posição especificada
+        for (int i = 0; i < 5; i++)  // Ajuste o número de instâncias conforme necessário
+        {
+            Instantiate(spawnPrefab, position, Quaternion.identity);
+            yield return new WaitForSeconds(spawnInterval);
         }
     }
     
@@ -214,7 +219,8 @@ public class Erali : MonoBehaviour
     // Função para curar o Hunt diretamente acessando a variável currentHealth
     void HealHunt()
     {
-        if (huntBoss != null)
+        // Verifica se o Hunt ainda está presente na cena
+        if (huntBoss != null && huntBoss.gameObject.activeInHierarchy)
         {
             // Verifica se a vida do Hunt está abaixo do máximo
             if (huntBoss.currentHealth < huntBoss.maxHealth)
@@ -229,9 +235,13 @@ public class Erali : MonoBehaviour
                 }
 
                 Debug.Log("Erali curou Hunt em " + healingAmount + " de vida! Vida atual: " + huntBoss.currentHealth);
-                
+
                 ActivateHealingParticles();
             }
+        }
+        else
+        {
+            Debug.Log("Hunt não está na cena. Erali não pode curá-lo.");
         }
     }
     

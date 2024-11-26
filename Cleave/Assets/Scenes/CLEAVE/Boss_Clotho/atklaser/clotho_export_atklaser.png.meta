@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,1015 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clotho_export_atklaser_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 908
+        width: 66
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665512ecdc48109439989450f67aa3df
+      internalID: 1464587499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 908
+        width: 63
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66876f05bc3cae041842ffda570ea967
+      internalID: 596822101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_2
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 908
+        width: 60
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f542eee669d8b45a4af026be68ec27
+      internalID: -906305321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 907
+        width: 58
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23938b45ba5be2e4db8fcd24b712fe33
+      internalID: 579370027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_4
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 907
+        width: 59
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdedb5363e748a04699175f638cc3b57
+      internalID: -406499539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_5
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 907
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ba09aa2bbbe5547bc3cc041e22a4e0
+      internalID: 295710124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_6
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 906
+        width: 61
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc07e7c97ec2d442be6c87127671546
+      internalID: -557958650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 757
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f9c486628c6c943a2f607cd367218c
+      internalID: -1831058168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 758
+        width: 62
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4d8fc98fbb18f45852c0005ecefe8c
+      internalID: -655344593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 759
+        width: 63
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca5ee9ff0e3a2c4bb3880adb0700ed3
+      internalID: -1953654551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_10
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 761
+        width: 65
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f386d45c40b26e46b01cf8d11301a81
+      internalID: 550633609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_11
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 762
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ec64ab74ad8f84e9ecf9b3400e5b9a
+      internalID: -470307148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_12
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 763
+        width: 66
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec36bc1449b8ba34ba918620b569c9c0
+      internalID: -841540538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_13
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 765
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab738b4bd068d3468e69216bbaae753
+      internalID: -1001471861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 616
+        width: 69
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f41d4faf1f4ca542ac23b944fbba10f
+      internalID: 537287415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 617
+        width: 70
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2871f4a4ae618d048a5c2df3d74a7c4b
+      internalID: 1415232325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_16
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 618
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49419584ab5b7354e9a7bb3db6eb1698
+      internalID: -558848717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_17
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 620
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691b00bb174cfcd4eb16b34a1e79b764
+      internalID: 1297351960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_18
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 620
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c989861afee848a8830e406365bd0
+      internalID: 1320294686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_19
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 620
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a76acb0e7c47f469db41cc95155c0c
+      internalID: 1260817864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_20
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 620
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05514cb664d9842488064453d7607b3d
+      internalID: -780993885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_21
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847127ab18de86d4abae09f7a33778a2
+      internalID: -868869159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e491337402fe44493ae7d70261df4a
+      internalID: 1369576429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7030be51df5ca364c8d9bcbf1a92b5b7
+      internalID: -1075931301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_24
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb66cea9c6ee33d4988bf54a54238cfe
+      internalID: 1778137943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_25
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab464c41c9128b40bcdb0e8eb53667c
+      internalID: -139015543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_26
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66be4ed282292e442b12d9ef26d3b152
+      internalID: -786586962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_27
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 470
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2ea1528940dcf44b58975da1556062
+      internalID: 2002631258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_28
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 320
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff0325931d828845be232ec1f311f17
+      internalID: -799308667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 320
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cbfffde6d10374dbea4a0a0e812bd9
+      internalID: 2005429871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_30
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 320
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3392afec011ad0f4e8414b716e769e65
+      internalID: 599716151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_31
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 319
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b32da4cbabc27498d9e9167127f236
+      internalID: -1716305280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_32
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 320
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d038306d2471b4caea28cf1f9c5cbc
+      internalID: -1980526751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_33
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 319
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8c00291378e2b40b73d2ca8306872c
+      internalID: 1583830124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_34
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 319
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58635275958daea45ba55fdf7611a6bf
+      internalID: 243654862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_35
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 169
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb4e11bad5782749b95855242c5a2e1
+      internalID: 1516946551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_36
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 169
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f70c5e97238f1d4b896b3fd8d259711
+      internalID: -301739515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_37
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 169
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec581490fa77248a32cdbaf87babfc
+      internalID: 244667844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_38
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 169
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80da822a058968645bfa69c3541301e1
+      internalID: 487966796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 169
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a408e10d9de2c4087a0c27d6f903b3
+      internalID: -738174483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_40
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 169
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd952fcb0c76d640a7da3e020ae1252
+      internalID: -768227192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_41
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 169
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1884bb975af4a4ea12287653c7b632
+      internalID: 264886893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_42
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 19
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1438a9f698a85504d92c0877dc95fc1b
+      internalID: 11031704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_43
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 20
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eade6a3fa8c5cbd4da06fd045f949bf1
+      internalID: -1212827528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_44
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 20
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537add12af1742142ac76875350cba87
+      internalID: -1459528870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_45
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 19
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd0892631715344eb595babe8b582d6
+      internalID: -1017293702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_46
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 19
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cde30670cfd6c45b2a511e85ea6059
+      internalID: -935653458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clotho_export_atklaser_47
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 20
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdf127ca6b1cc64f8ea2ddd58b62bdd
+      internalID: -319530941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +1127,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clotho_export_atklaser_0: 1464587499
+      clotho_export_atklaser_1: 596822101
+      clotho_export_atklaser_10: 550633609
+      clotho_export_atklaser_11: -470307148
+      clotho_export_atklaser_12: -841540538
+      clotho_export_atklaser_13: -1001471861
+      clotho_export_atklaser_14: 537287415
+      clotho_export_atklaser_15: 1415232325
+      clotho_export_atklaser_16: -558848717
+      clotho_export_atklaser_17: 1297351960
+      clotho_export_atklaser_18: 1320294686
+      clotho_export_atklaser_19: 1260817864
+      clotho_export_atklaser_2: -906305321
+      clotho_export_atklaser_20: -780993885
+      clotho_export_atklaser_21: -868869159
+      clotho_export_atklaser_22: 1369576429
+      clotho_export_atklaser_23: -1075931301
+      clotho_export_atklaser_24: 1778137943
+      clotho_export_atklaser_25: -139015543
+      clotho_export_atklaser_26: -786586962
+      clotho_export_atklaser_27: 2002631258
+      clotho_export_atklaser_28: -799308667
+      clotho_export_atklaser_29: 2005429871
+      clotho_export_atklaser_3: 579370027
+      clotho_export_atklaser_30: 599716151
+      clotho_export_atklaser_31: -1716305280
+      clotho_export_atklaser_32: -1980526751
+      clotho_export_atklaser_33: 1583830124
+      clotho_export_atklaser_34: 243654862
+      clotho_export_atklaser_35: 1516946551
+      clotho_export_atklaser_36: -301739515
+      clotho_export_atklaser_37: 244667844
+      clotho_export_atklaser_38: 487966796
+      clotho_export_atklaser_39: -738174483
+      clotho_export_atklaser_4: -406499539
+      clotho_export_atklaser_40: -768227192
+      clotho_export_atklaser_41: 264886893
+      clotho_export_atklaser_42: 11031704
+      clotho_export_atklaser_43: -1212827528
+      clotho_export_atklaser_44: -1459528870
+      clotho_export_atklaser_45: -1017293702
+      clotho_export_atklaser_46: -935653458
+      clotho_export_atklaser_47: -319530941
+      clotho_export_atklaser_5: 295710124
+      clotho_export_atklaser_6: -557958650
+      clotho_export_atklaser_7: -1831058168
+      clotho_export_atklaser_8: -655344593
+      clotho_export_atklaser_9: -1953654551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

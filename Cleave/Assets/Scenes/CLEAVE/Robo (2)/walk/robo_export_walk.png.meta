@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,763 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: robo_export_walk_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 761
+        width: 154
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5867674818a4a41a49fff3722e93c4
+      internalID: 1321580502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 760
+        width: 153
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a150a9fc69852442919bc9440aba8c1
+      internalID: -482525204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_2
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 760
+        width: 154
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae265448ca1e66549a0363bf686e6f4b
+      internalID: 828894933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_3
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 759
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad84733820a13c14697348fa5ac6f898
+      internalID: 923435819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 758
+        width: 153
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23217dd9a9746314e955af31adf08f60
+      internalID: 444333612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 758
+        width: 154
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419419543143d7045a6cf1ff1d6c7418
+      internalID: -1785769881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 613
+        width: 154
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b046fbd66def62f43883e0454703d03e
+      internalID: -1623571398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 613
+        width: 153
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6565b29cc26db2499fa0abc8cd11076
+      internalID: 589815536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_8
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 614
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869ac327d9403184780aa8a9ac866122
+      internalID: 1972750100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_9
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 614
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171d6f5b35f19fd4bb73e7098870d164
+      internalID: 1790518337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_10
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 614
+        width: 153
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6321bc2825e5adc4394de495fe605234
+      internalID: -896382260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_11
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 614
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89169d7692d1e44997729b54f1a42e8
+      internalID: -2079403861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 470
+        width: 154
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151e10a516c9e1741b8ae3424d0c4808
+      internalID: 1967176973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 470
+        width: 153
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569751c48d3922d40aa3da5ae71753a4
+      internalID: 1118972863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_14
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 468
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7e48ad14f13994981f07b242df9b6c
+      internalID: -1246952529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_15
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 468
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac392356213f0c4aa3dfd3aa1198d19
+      internalID: 772165755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_16
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 470
+        width: 153
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b16985efb68c744be0043cbc59c3bc
+      internalID: 1784429834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_17
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 471
+        width: 154
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708da69dda2a0c6419d2e6562bfdc2d1
+      internalID: -561498991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 327
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184a0d7399036df4f9d9b5ec7424f561
+      internalID: -153094248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_19
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 327
+        width: 153
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412360fe6c426ea41a3d2ec45b478cd7
+      internalID: -325027830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_20
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 326
+        width: 154
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a292c3e74d6b6c4b9086f69e15ba8fe
+      internalID: -528447774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_21
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 324
+        width: 154
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf04f4f01be34f64aac49bc44d3efc24
+      internalID: -2076950728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_22
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 323
+        width: 153
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8cecf80c6a8c84dba8c379af417ba9
+      internalID: 216411668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_23
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 323
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867371ecd980ef54ca6b33600b3b38e2
+      internalID: 434267113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_24
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 177
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b847b1239e5d39d4785bc1efc5b602a9
+      internalID: 565475401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_25
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 177
+        width: 153
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77436b1b1bf221e43895a1c1c6b4f5fe
+      internalID: 20467537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_26
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 177
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0673032ad4a962b4aa02c76d6dfcfbfc
+      internalID: 120973009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_27
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 177
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171a5369c3f75da438c0fb21b1fc7f2b
+      internalID: -288930131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_28
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 177
+        width: 153
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a845b681807224eac8ee780ffe19de
+      internalID: -1789418590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_29
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 177
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3397f1ae92d6f498199aa9ac1fa097
+      internalID: 1586649719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9602e6d5925004e8437ddc111e608b
+      internalID: -944798890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_31
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 32
+        width: 153
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a63119b09e1604459e6da46c27a6753
+      internalID: -964880283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_32
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 33
+        width: 154
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc898333b756f34f81ba99c0a212ef3
+      internalID: 1223443391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_33
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 33
+        width: 154
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c0c9b66621808499b3a79fb67d92c0
+      internalID: 1439099435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_34
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 34
+        width: 153
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59634a577b8258943abc1a8b7593de83
+      internalID: 481661886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robo_export_walk_35
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 35
+        width: 154
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4135c73ce189c6f4cbe7e1f0509b0c1c
+      internalID: -1791891437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +875,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      robo_export_walk_0: 1321580502
+      robo_export_walk_1: -482525204
+      robo_export_walk_10: -896382260
+      robo_export_walk_11: -2079403861
+      robo_export_walk_12: 1967176973
+      robo_export_walk_13: 1118972863
+      robo_export_walk_14: -1246952529
+      robo_export_walk_15: 772165755
+      robo_export_walk_16: 1784429834
+      robo_export_walk_17: -561498991
+      robo_export_walk_18: -153094248
+      robo_export_walk_19: -325027830
+      robo_export_walk_2: 828894933
+      robo_export_walk_20: -528447774
+      robo_export_walk_21: -2076950728
+      robo_export_walk_22: 216411668
+      robo_export_walk_23: 434267113
+      robo_export_walk_24: 565475401
+      robo_export_walk_25: 20467537
+      robo_export_walk_26: 120973009
+      robo_export_walk_27: -288930131
+      robo_export_walk_28: -1789418590
+      robo_export_walk_29: 1586649719
+      robo_export_walk_3: 923435819
+      robo_export_walk_30: -944798890
+      robo_export_walk_31: -964880283
+      robo_export_walk_32: 1223443391
+      robo_export_walk_33: 1439099435
+      robo_export_walk_34: 481661886
+      robo_export_walk_35: -1791891437
+      robo_export_walk_4: 444333612
+      robo_export_walk_5: -1785769881
+      robo_export_walk_6: -1623571398
+      robo_export_walk_7: 589815536
+      robo_export_walk_8: 1972750100
+      robo_export_walk_9: 1790518337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
