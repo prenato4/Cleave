@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 
 public class Hunt : MonoBehaviour
 {
+    public boss11 enemyManager; // Referência ao EnemyManager
     public GameObject arrowPrefab;  // Prefab da flecha
     public GameObject trapPrefab;  // Prefab da armadilha
     public Transform firePoint;    // Ponto de onde a flecha será disparada
@@ -64,6 +65,15 @@ public class Hunt : MonoBehaviour
         else if (player.position.x < transform.position.x && facingRight)
         {
             Flip();
+        }
+    }
+    
+    void OnDestroy()
+    {
+        // Quando o inimigo for destruído, chama a função no EnemyManager
+        if (enemyManager != null)
+        {
+            enemyManager.EnemyDestroyed(); // Informa que o inimigo foi destruído
         }
     }
 
@@ -146,7 +156,7 @@ public class Hunt : MonoBehaviour
         // Cria uma flecha no ponto de disparo
         GameObject bullet = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
 
-        SA bulletScript = bullet.GetComponent<SA>();
+        tirohunter bulletScript = bullet.GetComponent<tirohunter>();
 
         // Define a direção da flecha
         Vector2 direction = facingRight ? Vector2.right : Vector2.left;

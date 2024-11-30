@@ -9,6 +9,7 @@ public class Machado : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Verifica se colidiu com o inimigo
+        // Verifica se colidiu com o inimigo
         if (other.CompareTag("Inimigo")) 
         {
             Clotho enemy = other.GetComponent<Clotho>();
@@ -17,6 +18,26 @@ public class Machado : MonoBehaviour
             {
                 enemy.Damage(attackDamage); // Aplica o dano ao inimigo
             }
+            
+            Lanceiro e = other.GetComponent<Lanceiro>();
+            
+            if (e != null)
+            {
+                e.Damage(attackDamage); // Aplica o dano ao inimigo
+            }
+            
+            roboescudo eee = other.GetComponent<roboescudo>();
+            if (eee != null)
+            {
+                eee.Damage(attackDamage); // Aplica o dano ao inimigo
+            }
+            
+            robotiro eeee = other.GetComponent<robotiro>();
+            if (eeee != null)
+            {
+                eeee.Damage(attackDamage); // Aplica o dano ao inimigo
+            }
+            
             Fadinhas enem = other.GetComponent<Fadinhas>();
             if (enem != null)
             {

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -53,11 +54,13 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+
         // Inicializa referências e configurações iniciais
         anim = GetComponent<Animator>(); // Obtém o componente Animator
         rb = GetComponent<Rigidbody2D>(); // Obtém o componente Rigidbody2D
         rb.gravityScale = gravityScale;
         jumpsRemaining = maxJumps; // Inicializa o número de pulos restantes
+        health = maxhealth; // Garantir que a vida comece cheia
         currentLife = maxhealth; // Inicializa a vida atual
         NotifyLifeChanged(); // Notifica sobre a mudança na vida
         
@@ -307,6 +310,8 @@ public class Player : MonoBehaviour
         // Ação a ser realizada quando o jogador morrer
         //Debug.Log("Player morreu!");
         anim.SetInteger("Transition", 16);
+        GameManager.Instance.GameOver();
+        
     }
 
     void Flip()
@@ -361,5 +366,10 @@ public class Player : MonoBehaviour
             jumpsRemaining = maxJumps; // Reinicia o número de pulos restantes ao tocar no chão
         }
         
+    }
+    
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene("Fase 1");
     }
 }

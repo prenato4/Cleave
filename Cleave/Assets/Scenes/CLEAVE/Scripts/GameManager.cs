@@ -1,10 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; // Necessário para manipular textos no Canvas
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance; // Singleton para acesso global
     private int soulCount; // Contador de almas
+    
+    public string currentLevelName; // Nome da fase atual
+
+    public GameObject gamerover;
+    
     
     public Player player;
     public Coração vidaBarUI;
@@ -31,6 +37,12 @@ public class GameManager : MonoBehaviour
         {
             player.OnLifeChanged += vidaBarUI.UpdateLifeBar;
         }
+        
+    }
+    
+    void Update()
+    {
+        
     }
 
     // Método para adicionar almas
@@ -62,5 +74,17 @@ public class GameManager : MonoBehaviour
     public int GetSoulCount()
     {
         return soulCount;
+    }
+    public void GameOver()
+    {
+        gamerover.SetActive(true);
+    }
+    
+
+    
+
+    public void UpdateCurrentLevel(string levelName)
+    {
+        currentLevelName = levelName; // Atualiza a fase atual
     }
 }

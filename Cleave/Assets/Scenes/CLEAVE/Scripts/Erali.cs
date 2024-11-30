@@ -19,6 +19,7 @@ public class Erali : MonoBehaviour
     public float spawnDelay = 20f;       // Tempo entre cada grupo de instâncias
 
     private float spawnTimer;
+    public boss11 enemyManager; // Referência ao EnemyManager
     
     
     public float speed = 2f; // Velocidade de movimento da Erali
@@ -71,6 +72,15 @@ public class Erali : MonoBehaviour
         {
             ActivateObject();
             spawnTimer = spawnDelay;  // Reinicia o temporizador para o próximo grupo
+        }
+    }
+    
+    void OnDestroy()
+    {
+        // Quando o inimigo for destruído, chama a função no EnemyManager
+        if (enemyManager != null)
+        {
+            enemyManager.EnemyDestroyed(); // Informa que o inimigo foi destruído
         }
     }
     

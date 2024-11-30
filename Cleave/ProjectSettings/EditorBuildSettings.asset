@@ -6,9 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CLEAVE/Scenes/cutscene1.unity
+    guid: 1281f7b2a25de474e8967b1274670ed7
+  - enabled: 1
+    path: Assets/Scenes/CLEAVE/Scenes/Menu.unity
+    guid: 0b6a980e942cf3944a638393e469969d
+  - enabled: 1
     path: Assets/Scenes/CLEAVE/Scenes/Fase 1.unity
     guid: 87d8e9b0f9672c74e9adbb30b084689a
   - enabled: 1
+    path: Assets/Scenes/CLEAVE/Scenes/Boss 1.unity
+    guid: ef1228d3f7901a148b34d3549e2b7938
+  - enabled: 1
+    path: Assets/Scenes/CLEAVE/Scenes/cutscene2.unity
+    guid: a28b0af2354690f48a56047e25da6c3c
+  - enabled: 1
     path: Assets/Scenes/CLEAVE/Scenes/Fase 2.unity
     guid: d32105c6993bde6478d97473d2fdb36d
+  - enabled: 1
+    path: Assets/Scenes/CLEAVE/Scenes/Boss 2.unity
+    guid: 25a858a9dfcfdfb42a2864f905d69215
+  - enabled: 1
+    path: Assets/Scenes/CLEAVE/Scenes/cutscene3.unity
+    guid: 838feea3538b6fb4b8acdee2ae539056
   m_configObjects: {}

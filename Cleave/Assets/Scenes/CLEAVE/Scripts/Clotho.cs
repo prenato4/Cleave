@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Clotho : MonoBehaviour
 {
+    public GameObject objectToActivate;
     public Transform player; // Referência ao player
     public GameObject projectilePrefab; // Prefab do projétil
     public Transform firePoint; // Ponto de disparo do projétil
@@ -181,5 +182,6 @@ public class Clotho : MonoBehaviour
         Debug.Log("Clotho morreu!");
         animator.SetTrigger("death");
         Destroy(gameObject, 1.5f); // Exemplo de desativar o objeto (Clotho morreu)
+        objectToActivate.SetActive(true);
     }
 }
