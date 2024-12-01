@@ -123,6 +123,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &76783070
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697855562448557588, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507333670675163104, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+      propertyPath: m_Name
+      value: "but\xF5es"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+--- !u!114 &76783071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 332743138490361931, guid: 0a4f0f49ba170694c8abc31ea5b6ecae, type: 3}
+  m_PrefabInstance: {fileID: 76783070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a1d036d91429645a3c375999aa9764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &147787448
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +273,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 147787451}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 76783071}
+        m_TargetAssemblyTypeName: Cenasss, Assembly-CSharp
+        m_MethodName: LoadFase2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &147787451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,3 +869,4 @@ SceneRoots:
   - {fileID: 500891813}
   - {fileID: 671568340}
   - {fileID: 1029082927}
+  - {fileID: 76783070}
