@@ -30,7 +30,7 @@ public class Puzzle1 : MonoBehaviour
     // Ativa o objeto final
     private void ActivateTargetObject()
     {
-        targetObject.SetActive(true);
+        targetObject.SetActive(true); // Agora ativa o objeto
         Debug.Log("Objeto ativado!");
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pensa : MonoBehaviour
 {
+    
+    public int damageAmount = 300;
     public float dropSpeed = 2f;      // Velocidade de descida da prensa
     public float pressedHeight = 1f;  // Altura onde a prensa desce
     public float resetHeight = 10f;   // Altura onde a prensa começa
@@ -61,6 +63,20 @@ public class Pensa : MonoBehaviour
         if (other.CompareTag("Player")) // Troque "Player" pelo tag que você quiser usar
         {
             isPressed = true;
+        }
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Verifique se o objeto colidido tem a tag "Player"
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Acesse o script de vida do player e reduza a vida
+            Player playerHealth = collision.gameObject.GetComponent<Player>();
+            if (playerHealth != null)
+            {
+                playerHealth.Damage(damageAmount); // Chama a função que reduz a vida
+            }
         }
     }
 }

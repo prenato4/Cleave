@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempoAntesExplosao: 3
   raioExplosao: 3
-  dano: 5
+  dano: 2
   camadaDano:
     serializedVersion: 2
     m_Bits: 1

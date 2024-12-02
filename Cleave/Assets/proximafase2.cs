@@ -10,7 +10,7 @@ public class proximafase2 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Carrega a próxima cena
-            SceneManager.LoadScene("Fase 2");
+            SceneManager.LoadScene("cutscene2");
         }
     }
 }

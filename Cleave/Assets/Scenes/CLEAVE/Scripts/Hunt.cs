@@ -18,6 +18,8 @@ public class Hunt : MonoBehaviour
 
     public int maxHealth = 100;  // Vida máxima do boss
     public int currentHealth;    // Vida atual do boss
+    public AudioClip healingSound; // Som de cura
+    private AudioSource audioSource; // Componente de áudio
 
     public float spawnInterval = 15f;
 
@@ -28,6 +30,7 @@ public class Hunt : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
 
@@ -116,6 +119,7 @@ public class Hunt : MonoBehaviour
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
             if (distanceToPlayer <= attackRange)
             {
+                audioSource.PlayOneShot(healingSound);
                 ShootAtPlayer();
             }
         }
@@ -149,6 +153,7 @@ public class Hunt : MonoBehaviour
     void ShootAtPlayer()
     {
         isFiring = true;
+        
 
         // Troca para a animação de ataque
         anim.SetInteger("Transition", 2);

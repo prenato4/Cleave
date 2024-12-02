@@ -150,7 +150,7 @@ public class robotiro : MonoBehaviour
                 Vector2 shootDirection = transform.localScale.x > 0 ? Vector2.left : Vector2.right;
 
                 // Configura o movimento da bala (assumindo que o prefab tenha um script para movimentação)
-                SA bulletScript = bullet.GetComponent<SA>();
+                tirohunter bulletScript = bullet.GetComponent<tirohunter>();
                 if (bulletScript != null)
                 {
                     bulletScript.SetDirection(shootDirection);

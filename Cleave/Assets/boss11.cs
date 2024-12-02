@@ -23,10 +23,7 @@ public class boss11 : MonoBehaviour
     // Função que ativa o objeto
     void ActivateObject()
     {
-        if (objectToActivate != null)
-        {
-            objectToActivate.SetActive(true); // Ativa o objeto
-        }
+        SceneManager.LoadScene("cutscene2");
     }
     
 }

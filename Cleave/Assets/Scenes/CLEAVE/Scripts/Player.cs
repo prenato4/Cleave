@@ -15,7 +15,8 @@ public class Player : MonoBehaviour
     public GameObject bulletPrefab; // Prefab da bala (defina isso no Unity)
     public Transform firePoint; // Ponto de disparo (posicione no jogador no Unity)
     public int maxhealth;
-    
+    public AudioClip dashSound; // Som de dash
+    private AudioSource audioSource; // Componente de áudio
     private float lastAttackTime = 0f; // Armazena o tempo do último ataque
     public float attackCooldown = 0.5f; // Tempo de espera entre ataques
 
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
     
      // Flag para controlar se a tecla Shift está pressionada
     private bool facingRight = true; // Define se o jogador está virado para a direita
+    public GameObject gamerover;
     
     
     private bool controlsEnabled = true;
@@ -54,6 +56,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        
+        audioSource = GetComponent<AudioSource>();
 
         // Inicializa referências e configurações iniciais
         anim = GetComponent<Animator>(); // Obtém o componente Animator
@@ -91,7 +95,7 @@ public class Player : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.LeftShift) && CanDash) // Verifica se a tecla Shift está pressionada e se o cooldown foi atingido
         {
-            
+            audioSource.PlayOneShot(dashSound);
             StartCoroutine(Dash()); // Inicia o dash
             // lastDashTime = Time.time; // Atualiza o momento do último dash
         }
@@ -230,7 +234,9 @@ public class Player : MonoBehaviour
     {
         CanDash = false;
         isdashing = true;
+        
         anim.SetInteger("Transition", 15);
+        
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2((facingRight ? -1 : 1) * dashCoolpower, 0f);
@@ -310,7 +316,7 @@ public class Player : MonoBehaviour
         // Ação a ser realizada quando o jogador morrer
         //Debug.Log("Player morreu!");
         anim.SetInteger("Transition", 16);
-        GameManager.Instance.GameOver();
+        GameOver();
         
     }
 
@@ -366,6 +372,10 @@ public class Player : MonoBehaviour
             jumpsRemaining = maxJumps; // Reinicia o número de pulos restantes ao tocar no chão
         }
         
+    }
+    public void GameOver()
+    {
+        gamerover.SetActive(true);
     }
     
     public void RestartLevel()

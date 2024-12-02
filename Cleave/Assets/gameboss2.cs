@@ -8,6 +8,8 @@ public class gameboss2 : MonoBehaviour
     [Header("Configuração do Clotho")]
     public Image clothoHealthBarImage; // Referência à barra de vida do Clotho
     public Clotho clothoBoss;         // Referência ao script do Clotho
+    
+    
 
     void Start()
     {

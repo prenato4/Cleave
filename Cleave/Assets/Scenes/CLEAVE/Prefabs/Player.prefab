@@ -436,6 +436,7 @@ MonoBehaviour:
   gravityScale: 1
   rb: {fileID: 975536187653694664}
   shootCooldown: 0.5
+  gamerover: {fileID: 0}
   tr: {fileID: 4063188964449354916}
 --- !u!70 &1352803600390305669
 CapsuleCollider2D:

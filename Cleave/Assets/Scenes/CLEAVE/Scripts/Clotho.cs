@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Clotho : MonoBehaviour
 {
+    public AudioClip shieldSound; // Som do escudo
+    private AudioSource audioSource; // Componente de áudio
     public GameObject objectToActivate;
     public Transform player; // Referência ao player
     public GameObject projectilePrefab; // Prefab do projétil
@@ -24,6 +26,7 @@ public class Clotho : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         // Inicializa a vida de Clotho
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
@@ -103,6 +106,7 @@ public class Clotho : MonoBehaviour
 
     IEnumerator Attack()
     {
+        
         canAttack = false;
 
         // Inicia a animação de ataque
@@ -114,6 +118,7 @@ public class Clotho : MonoBehaviour
         // Instancia o projétil
         if (firePoint != null && projectilePrefab != null)
         {
+            audioSource.PlayOneShot(shieldSound);
             GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
             tiroclotho projectileScript = projectile.GetComponent<tiroclotho>();
 
@@ -134,6 +139,7 @@ public class Clotho : MonoBehaviour
         {
             shield.SetActive(true); // Ativa o escudo
             isInvulnerable = true; // Clotho fica invulnerável
+            
         }
     }
 

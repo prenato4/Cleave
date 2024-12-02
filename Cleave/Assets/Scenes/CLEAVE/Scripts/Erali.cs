@@ -7,7 +7,8 @@ public class Erali : MonoBehaviour
     public int healingAmount = 20;  // Quantidade de vida que Erali vai curar
     public float healInterval = 10f;  // Intervalo de 10 segundos para curar
     public GameObject healingParticles; // Referência para o sistema de partículas de cura
-
+    public AudioClip healingSound; // Som de cura
+    private AudioSource audioSource; // Componente de áudio
     private float healTimer;  // Temporizador para controlar o tempo de cura
     
     public int maxHealth = 100;  // Vida máxima da Erali
@@ -33,6 +34,7 @@ public class Erali : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         spawnTimer = spawnDelay;  
         currentHealth = maxHealth;          // Define a vida inicial como o valor máximo
         
@@ -245,7 +247,7 @@ public class Erali : MonoBehaviour
                 }
 
                 Debug.Log("Erali curou Hunt em " + healingAmount + " de vida! Vida atual: " + huntBoss.currentHealth);
-
+                audioSource.PlayOneShot(healingSound);
                 ActivateHealingParticles();
             }
         }
